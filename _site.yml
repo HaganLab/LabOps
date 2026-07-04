@@ -1,7 +1,7 @@
 name: "ResourcesGuide"
 
 navbar:
-  title: "Computational Resources - Hagan Lab"
+  title: "<img src='images/haganlab-logo.png' alt='Hagan Lab' height='26'>"
   left:
   - text: "Working with HPC"
     href: Working_with_hpc.html
