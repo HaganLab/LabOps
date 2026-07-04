@@ -32,9 +32,4 @@ Increases accessibility and reproducibility, promotes detailed descriptions as w
     * GitHub: for code mostly
     * Zenodo: for development and review as well as publication, integrates with GitHub
 
-## Running the nf-core RNA-seq Pipeline
-
-Several lab projects use the [nf-core/rnaseq](https://nf-co.re/rnaseq) Nextflow pipeline for standardized, containerized, and reproducible RNA-seq analysis (see [Containerizing](Containerizing.html) for background on why these pipelines run in containers on the HPC cluster).
-
-* [nf-core/rnaseq usage docs](https://nf-co.re/rnaseq/1.4.2/docs/usage)
-* [Streamlined RNA-seq analysis using Nextflow (NYU Gencore)](https://gencore.bio.nyu.edu/streamlined-rna-seq-analysis-using-nextflow/)
+For how the lab actually runs its analysis pipelines (e.g., nf-core/rnaseq) before getting to the publishing stage, see [Containerizing](Containerizing.html).
