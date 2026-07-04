@@ -1760,32 +1760,15 @@ before re-downloading data. The caching ensures that we still have the
 latest version available in our system in the case that the original
 becomes unavailable for whatever reason.</p>
 <p>Sharing data between “native” projects on the same file system can be
-done using the R package <code>pins</code> (see below). Sharing data
-among file systems can be done either directly with Globus or via
-servers such as Synapse and RStudio Connect. Interacting with servers
-such as Synapse and RStudio Connect can be done using either their own
-clients (see below) or with <code>pins</code>.</p>
+done using the R package <code>pins</code>. Sharing data among file
+systems can be done either directly with Globus or via servers such as
+Synapse and RStudio Connect, using either their own clients or
+<code>pins</code>.</p>
 <p>To read more about data provenance and management:<br />
 <a href="https://old.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf" class="uri">https://old.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf</a><br />
 <a href="https://www.w3.org/2005/Incubator/prov/wiki/What_Is_Provenance" class="uri">https://www.w3.org/2005/Incubator/prov/wiki/What_Is_Provenance</a><br />
 <a href="https://docs.synapse.org/articles/provenance.html" class="uri">https://docs.synapse.org/articles/provenance.html</a></p>
 <p>An example for a resource sharing plan to include in NIH grants: <a href="https://github.com/lab-carpentry/blueprint-resourcesharing/blob/master/examples/NIH-example.md" class="uri">https://github.com/lab-carpentry/blueprint-resourcesharing/blob/master/examples/NIH-example.md</a></p>
-</div>
-<div id="from-synapse" class="section level2">
-<h2>From Synapse</h2>
-<p><a href="https://docs.synapse.org/articles/" class="uri">https://docs.synapse.org/articles/</a> Often the best way to
-work with data that live on Synapse is to download/upload them directly
-from Synapse using its <a href="https://r-docs.synapse.org/articles/synapser.html">R</a>, <a href="https://python-docs.synapse.org/build/html/index.html">Python</a>,
-or <a href="https://python-docs.synapse.org/build/html/CommandLineClient.html">CLI</a>
-clients. See <a href="https://docs.synapse.org/articles/provenance.html">here</a> for
-how provenance works on Synapse.</p>
-<p>For example, using the R package <code>synapser</code>: The function
-<code>synGet()</code> downloads the data into a cache folder in your
-home directory (<code>~/.synapseCache</code>) in whichever file system
-you’re on. Every time you run the code, it checks your cached copy
-against the original on Synapse and re-downloads it only if there have
-been changes since the last download. The cache location is specified in
-<code>~/.synapseConfig</code>.</p>
 </div>
 
 
