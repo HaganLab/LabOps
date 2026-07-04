@@ -119,6 +119,6 @@ $ rsync -rvtP /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/nfcore_R
 - [ssh-utils](https://cran.r-project.org/web/packages/ssh.utils/index.html)  
 
 
-## Remote RStudio
+## Using OnDemand (Browser-Based HPC Access)
 
-[CCHMC Research RStudio on HPC](https://hpc.research.cchmc.org/node/67) — instructions for launching an RStudio session on the HPC cluster and accessing it from a browser on your local machine. This lets you run analyses using the cluster's compute and memory (well beyond what a laptop can handle) while working in a familiar RStudio interface, without having to copy large datasets off the HPC first.
+[CCHMC HPC OnDemand Tutorial](https://hpc.research.cchmc.org/node/67) — OnDemand is a web portal that gives you access to the HPC cluster directly from a browser, no SSH client or terminal setup required. Through it you can launch interactive apps such as RStudio and Jupyter sessions running on the cluster's compute and memory, browse and manage files, and submit jobs — all without moving your data off the HPC first. You'll need HPC access first (email `help-cluster@bmi.cchmc.org`, per [Requesting an Account](#requesting-an-account) above), then log in at [ondemand.research.cchmc.org](https://ondemand.research.cchmc.org) with your CCHMC credentials.
