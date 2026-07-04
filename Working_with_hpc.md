@@ -124,3 +124,7 @@ $ rsync -rvtP /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/nfcore_R
 **OnDemand Portal (Recommended)** is a web interface which allows you to upload and download files; create, edit, submit, and monitor jobs; run GUI applications; and connect via SSH — all via a web browser, with no client software to install and configure. For more information, see the [CCHMC HPC OnDemand Tutorial](https://hpc.research.cchmc.org/node/67).
 
 You'll need HPC access first (email `help-cluster@bmi.cchmc.org`, per [Requesting an Account](#requesting-an-account) above), then log in at [ondemand.research.cchmc.org](https://ondemand.research.cchmc.org) with your CCHMC credentials.
+
+## References
+
+- [CCHMC HPC: Accessing the Cluster](https://hpc.research.cchmc.org/accessing-the-cluster)
