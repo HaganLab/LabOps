@@ -22,11 +22,14 @@ h1, h2, h3, h4, h5, h6,
   color: var(--hagan-navy);
 }
 
-/* Navbar: brand color + always-collapsed hamburger, regardless of viewport width */
+/* Navbar: white background like haganlab.org's header (navy/purple are
+   used for text and accents there, not the bar itself) + always-collapsed
+   hamburger, regardless of viewport width */
 
 .navbar-default {
-  background-color: var(--hagan-navy);
-  border-color: var(--hagan-navy);
+  background-color: #ffffff;
+  border-color: #eeeeee;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
 }
 
 .navbar-brand {
@@ -50,12 +53,17 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 12px;
 }
 
-.navbar-toggle .icon-bar {
-  background-color: #ffffff;
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: var(--hagan-navy);
 }
 
 .navbar-toggle:hover,
 .navbar-toggle:focus {
+  background-color: #f4f0f8;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
   background-color: var(--hagan-purple);
 }
 
@@ -82,19 +90,19 @@ h1, h2, h3, h4, h5, h6,
   float: none;
 }
 
-.navbar-nav > li > a {
-  color: #ffffff;
+.navbar-default .navbar-nav > li > a {
+  color: var(--hagan-navy);
 }
 
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: var(--hagan-purple);
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: var(--hagan-purple);
+  background-color: #f4f0f8;
 }
 
-.navbar-nav > .active > a,
-.navbar-nav > .active > a:hover,
-.navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
   background-color: var(--hagan-purple);
 }
