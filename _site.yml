@@ -28,3 +28,5 @@ output:
     highlight: textmate
     keep_md: true
     css: custom.css
+    includes:
+      after_body: after_body.html

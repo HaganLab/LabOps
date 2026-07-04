@@ -15,7 +15,7 @@ Containers package up code together with all of its dependencies (specific versi
 * **Docker** is the most common tool for *building* and running containers locally, and most published container images are distributed as Docker images. However, Docker requires a background daemon running with elevated privileges, which shared, multi-user HPC systems generally don't allow for security reasons.
 * **Singularity** (now also distributed as **Apptainer**) is the container runtime used on the CCHMC HPC cluster instead. It can pull and run existing Docker images without needing root access, which is why you'll see it referenced in the [Working with the HPC](Working_with_hpc.html) page (`module load singularity/3.7.0`).
 
-In practice, for most lab work you won't need to build your own containers — you'll pull existing, well-maintained images (e.g., from [nf-core](https://nf-co.re/) pipelines, which auto-pull the containers they need, or from [Bioconda](https://bioconda.github.io/)/[Biocontainers](https://biocontainers.pro/)) rather than writing your own `Dockerfile`.
+In practice, for most lab work you won't need to build your own containers — you'll pull existing, well-maintained images (e.g., from [nf-core](https://nf-co.re/) pipelines, which auto-pull the containers they need, or from [Bioconda](https://bioconda.github.io/)/[Biocontainers](https://biocontainers.pro/)) rather than writing your own `Dockerfile`. If you do want to build your own, the lab keeps a small collection of ready-to-use Docker images and Docker Compose setups (including a data-science/Jupyter starting point) in the [Containerization folder in LabCommons](https://github.com/HaganLab/LabCommons/tree/main/Containerization).
 
 ## Using a Container on the HPC
 
