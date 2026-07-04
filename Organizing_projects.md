@@ -5,7 +5,7 @@ title: "Organizing Projects"
 
 ## FAIR Principles
 
-Good project organization is what makes your work **F**indable, **A**ccessible, **I**nteroperable, and **R**eusable (FAIR) — both for collaborators now and for your future self returning to a project months later. Two conventions from the [Hagan Lab Manual](https://github.com/HaganLab) that apply to every project, computational or otherwise:
+Good project organization is what makes your work **F**indable, **A**ccessible, **I**nteroperable, and **R**eusable (FAIR) — both for collaborators now and for your future self returning to a project months later. Two conventions from the [Hagan Lab Manual](https://github.com/HaganLab/LabCommons/blob/main/LabManual/Hagan_Lab_Manual.docx) that apply to every project, computational or otherwise:
 
 * Use dates in **`YYYY-MM-DD`** format in file and folder names so they sort chronologically, along with a project identifier and version information where relevant.
 * Keep raw data separate from processed data and scripts, and never overwrite raw data — treat it as read-only (see [Acquiring and Sharing Data](Acquiring_and_sharing_data.html)).

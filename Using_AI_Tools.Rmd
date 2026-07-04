@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 
 ## Lab Policy
 
-Per the [Hagan Lab Manual](https://github.com/HaganLab), use of AI tools (large language models and coding assistants) is permitted as a productivity aid, with important conditions:
+Per the [Hagan Lab Manual](https://github.com/HaganLab/LabCommons/blob/main/LabManual/Hagan_Lab_Manual.docx), use of AI tools (large language models and coding assistants) is permitted as a productivity aid, with important conditions:
 
 * **Use approved, license-covered tools.** The lab has a Claude Team license, and each lab member receives a seat — use this rather than ad hoc personal accounts for lab work. If you're a rotating student or short-term member, check with Thomas about tool access before using AI tools for lab work.
 * **You remain fully responsible for the accuracy, validity, and integrity of anything you produce with AI assistance.** Verify outputs. Never present unverified AI output as established fact.

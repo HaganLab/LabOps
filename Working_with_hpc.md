@@ -11,7 +11,7 @@ CCHMC [HPC](https://bmi.cchmc.org/resources/clusters/computational-cluster) empl
 
 ### Requesting an Account
 
-New lab members should request an HPC cluster account by emailing `help-cluster@bmi.cchmc.org`. This is one of the onboarding tasks in the [Hagan Lab Manual](https://github.com/HaganLab) and should be done in your first week.
+New lab members should request an HPC cluster account by emailing `help-cluster@bmi.cchmc.org`. This is one of the onboarding tasks in the [Hagan Lab Manual](https://github.com/HaganLab/LabCommons/blob/main/LabManual/Hagan_Lab_Manual.docx) and should be done in your first week.
 
 #### Some useful references:
 

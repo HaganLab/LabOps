@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 
 ## Lab Policy: Sharing Data and Code at Publication
 
-Per the [Hagan Lab Manual](https://github.com/HaganLab), we are committed to open, reproducible science and to meeting the data-sharing requirements of journals and funders, including the **NIH Data Management and Sharing (DMS) Policy**. A few things to plan for from the start of a project, not just at submission time:
+Per the [Hagan Lab Manual](https://github.com/HaganLab/LabCommons/blob/main/LabManual/Hagan_Lab_Manual.docx), we are committed to open, reproducible science and to meeting the data-sharing requirements of journals and funders, including the **NIH Data Management and Sharing (DMS) Policy**. A few things to plan for from the start of a project, not just at submission time:
 
 * **Discuss the data-sharing plan with Thomas early.** Don't wait until a manuscript is in review to figure out where data and code will live.
 * **Deposit data in an established, discipline-appropriate public repository** where possible (e.g., [GEO](https://www.ncbi.nlm.nih.gov/geo/), [SRA](https://www.ncbi.nlm.nih.gov/sra), [ImmPort](https://www.immport.org/), or others listed below) rather than only as a journal supplement.

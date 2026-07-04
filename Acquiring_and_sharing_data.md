@@ -6,7 +6,7 @@ title: "Acquiring and Sharing Data"
 
 ## Lab Policy: Where Data Lives
 
-Per the [Hagan Lab Manual](https://github.com/HaganLab), these rules apply to all lab data, regardless of project:
+Per the [Hagan Lab Manual](https://github.com/HaganLab/LabCommons/blob/main/LabManual/Hagan_Lab_Manual.docx), these rules apply to all lab data, regardless of project:
 
 * **Approved storage**: CCHMC **OneDrive** for documents and working files, and the **BMI HPC cluster** for large datasets and analyses (see [Working with the HPC](Working_with_hpc.html)). Analysis code belongs in the lab's **GitHub** repositories under version control.
 * **Never store the only copy of anything locally.** Data must never exist only on a personal device, a personal cloud account, or a single local drive — institutional storage is backed up automatically, and you're responsible for making sure your work actually lands there.
