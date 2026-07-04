@@ -5,7 +5,7 @@ navbar:
   left:
   - text: "Working with HPC"
     href: Working_with_hpc.html
-  - text: "Git and Github"
+  - text: "Git and GitHub"
     href: git_and_github.html
   - text: "Acquiring Data"
     href: Acquiring_and_sharing_data.html

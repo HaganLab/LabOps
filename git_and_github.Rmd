@@ -1,5 +1,5 @@
 ---
-title: "Git and Github"
+title: "Git and GitHub"
 ---
 
 ```{r setup, include=FALSE}
@@ -10,13 +10,14 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 
 Per the [Hagan Lab Manual](https://github.com/HaganLab), analysis code should be version-controlled and uploaded to the lab's GitHub repositories — this is part of maintaining reproducible, well-documented records that anyone in the lab (including your future self) can pick up. Documented analysis pipelines and coding conventions are maintained under [github.com/HaganLab](https://github.com/HaganLab) and the HaganLab HPC folder; if you're using an AI coding assistant to help write analysis code, the same expectations apply — see [Using AI Tools](Using_AI_Tools.html).
 
-## Set up Git and Github
+## Set up Git and GitHub
 
 There are plenty of resources out there to help you configure Git and GitHub in more depth — the steps below are just enough to get you started.
 
 ### For Mac
 Use this command to download git 👉 `brew install git`
-`Git --version`
+
+Then verify it installed correctly: `git --version`
 
 ### For Linux (Ubuntu)
 Use this command to download git 👉 `sudo apt-get install git`
@@ -27,7 +28,7 @@ https://github.com/
 
 - Create a new repo by clicking "New repository"
 
-![Screenshot 2023-10-18 at 5 46 29 AM](https://github.com/amnahsiddiqa/Docker_Singularity_HPC_Stuffs/assets/28387956/bacf34a6-81be-4285-8dff-327bb431d509)
+![Creating a new repository on GitHub](https://github.com/amnahsiddiqa/Docker_Singularity_HPC_Stuffs/assets/28387956/bacf34a6-81be-4285-8dff-327bb431d509)
 
 ## Clone Repo
 
@@ -48,7 +49,7 @@ git config -l
 
 ## Make changes to remote
 
-Remember the order: add, commit, pull push :)
+Remember the order: add, commit, pull, push :)
 
 ```
 # Stage all changes in the current directory
@@ -79,7 +80,7 @@ There are two types of commands, and you should choose carefully between them ba
 
 ```
 (base) ➜  test_demo2 git:(main) ✗ git reset 3bbe6d4 --hard
-#HEAD is now at `sha key of commit` Initial commit
+# output: HEAD is now at 3bbe6d4 Initial commit
 (base) ➜  test_demo2 git:(main) ✗ git reset --soft "HEAD@{1}"
 (base) ➜  test_demo2 git:(main) ✗ git commit -m "Revert to 3bbe6d4"
 
@@ -92,6 +93,4 @@ There are two types of commands, and you should choose carefully between them ba
 
 ## Terminology
 
-**A commit SHA (Secure Hash Algorithm) key:**
-
-- Commonly referred to as a "commit hash" or "commit SHA-1," is a unique identifier for a specific commit in a version control system, such as Git. It's a cryptographic hash value that's generated from the contents of the commit and the commit's metadata. The commit SHA key is used to uniquely identify and reference a particular state or snapshot of a repository at a specific point in time.
+**Commit SHA (Secure Hash Algorithm) key** — commonly referred to as a "commit hash" or "commit SHA-1," this is a unique identifier for a specific commit in a version control system such as Git. It's a cryptographic hash value generated from the commit's contents and metadata, and it's used to uniquely identify and reference a particular state or snapshot of a repository at a specific point in time.
