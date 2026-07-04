@@ -1,7 +1,5 @@
 ---
 title: "Using AI Tools"
-author: "Amnah Siddiqa"
-date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}

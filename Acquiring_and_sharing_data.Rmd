@@ -1,7 +1,5 @@
 ---
 title: "Acquiring and Sharing Data"
-author: "Amnah Siddiqa"
-date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}

@@ -9,11 +9,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Amnah Siddiqa" />
 
-<meta name="date" content="2026-07-03" />
 
-<title>Working with the hpc clusters</title>
+<title>Working with the HPC</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1592,16 +1590,14 @@ border-radius: 0px;
 
 
 
-<h1 class="title toc-ignore">Working with the hpc clusters</h1>
-<h4 class="author">Amnah Siddiqa</h4>
-<h4 class="date">2026-07-03</h4>
+<h1 class="title toc-ignore">Working with the HPC</h1>
 
 </div>
 
 
-<div id="high-performance-computing-cluster-hpcc" class="section level2">
-<h2>High Performance Computing Cluster (HPCC)</h2>
-<p>CCHMC <a href="https://bmi.cchmc.org/resources/clusters/computational-cluster">HPCC</a>
+<div id="high-performance-computing-hpc-cluster" class="section level2">
+<h2>High Performance Computing (HPC) Cluster</h2>
+<p>CCHMC <a href="https://bmi.cchmc.org/resources/clusters/computational-cluster">HPC</a>
 employs LSF resource manager and scheduler.</p>
 <div id="requesting-an-account" class="section level3">
 <h3>Requesting an Account</h3>
@@ -1612,7 +1608,7 @@ and should be done in your first week.</p>
 <div id="some-useful-references" class="section level4">
 <h4>Some useful references:</h4>
 <ul>
-<li><p>CCHMC HPCC talk (slides on SharePoint — link TBD; ask the PI or a
+<li><p>CCHMC HPC talk (slides on SharePoint — link TBD; ask the PI or a
 lab member if you need this) covering how to get some flexibility in
 interactive sessions for development and testing.</p></li>
 <li><p>Bioinformatics and R Users Group (BUG and RUG). You can reach
@@ -1633,9 +1629,9 @@ Center SC workshop</a></p></li>
 downloaded and setup.</li>
 </ul>
 </div>
-<div id="getting-acquainted-with-your-hpcc-environment" class="section level2">
-<h2>Getting acquainted with your HPCC environment</h2>
-<p>If you are connected to VPN, log into HPCC from your terminal
+<div id="getting-acquainted-with-your-hpc-environment" class="section level2">
+<h2>Getting acquainted with your HPC environment</h2>
+<p>If you are connected to VPN, log into HPC from your terminal
 using:</p>
 <pre class="bash"><code>$ ssh username@bmiclusterp.chmcres.cchmc.org
 #example
@@ -1662,11 +1658,11 @@ using:</p>
 [sid1df@bmiclusterp2 /]$ module load nextflow
 [sid1df@bmiclusterp2 /]$ module load singularity/3.7.0
 </code></pre>
-<div id="handling-batch-jobs-on-hpcc" class="section level3">
-<h3>Handling batch jobs on HPCC</h3>
-<p>Two ways to work with the HPCC: through interactive sessions and
-batch job submission. Use scratch space for computing and submit batch
-jobs as follows:</p>
+<div id="handling-batch-jobs-on-hpc" class="section level3">
+<h3>Handling batch jobs on HPC</h3>
+<p>Two ways to work with the HPC: through interactive sessions and batch
+job submission. Use scratch space for computing and submit batch jobs as
+follows:</p>
 <pre class="bash"><code>#submit
 $ bsub &lt;runscript.sh (make sure to include &lt; followed immediately by filename)
 #check the status of current jobs 
@@ -1728,8 +1724,8 @@ remote server from your local environment:</strong></p>
 </div>
 <div id="remote-rstudio" class="section level2">
 <h2>Remote RStudio</h2>
-<p>You can run Rstudio on the HPCC and access it from a local browser,
-as explained (In progress).</p>
+<p>You can run Rstudio on the HPC and access it from a local browser, as
+explained (In progress).</p>
 </div>
 
 

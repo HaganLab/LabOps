@@ -1,7 +1,5 @@
 ---
 title: "Acquiring and Sharing Data"
-author: "Amnah Siddiqa"
-date: "2026-07-03"
 ---
 
 

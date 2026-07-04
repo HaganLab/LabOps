@@ -1,7 +1,5 @@
 ---
 title: "Using AI Tools"
-author: "Amnah Siddiqa"
-date: "2026-07-03"
 ---
 
 

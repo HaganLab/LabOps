@@ -1,7 +1,5 @@
 ---
 title: "Organizing Projects"
-author: "Amnah Siddiqa"
-date: "2026-07-03"
 ---
 
 

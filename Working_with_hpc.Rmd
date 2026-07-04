@@ -1,7 +1,5 @@
 ---
-title: "Working with the hpc clusters"
-author: "Amnah Siddiqa"
-date: "`r Sys.Date()`"
+title: "Working with the HPC"
 ---
 
 ```{r setup, include=FALSE}
@@ -9,9 +7,9 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 ```
 
 
-## High Performance Computing Cluster (HPCC)
+## High Performance Computing (HPC) Cluster
 
-CCHMC [HPCC](https://bmi.cchmc.org/resources/clusters/computational-cluster) employs LSF resource manager and scheduler.
+CCHMC [HPC](https://bmi.cchmc.org/resources/clusters/computational-cluster) employs LSF resource manager and scheduler.
 
 ### Requesting an Account
 
@@ -19,7 +17,7 @@ New lab members should request an HPC cluster account by emailing `help-cluster@
 
 #### Some useful references:
 
-- CCHMC HPCC talk (slides on SharePoint — link TBD; ask the PI or a lab member if you need this) covering how to get some flexibility in interactive sessions for development and testing.
+- CCHMC HPC talk (slides on SharePoint — link TBD; ask the PI or a lab member if you need this) covering how to get some flexibility in interactive sessions for development and testing.
 
 - Bioinformatics and R Users Group (BUG and RUG). You can reach `bug-announce@mailman.cchmc.org` to get invitation for the mailing list. 
 
@@ -32,9 +30,9 @@ New lab members should request an HPC cluster account by emailing `help-cluster@
 
 - Call IT @ 64100 depart to get yourself `anyconnect` downloaded and setup.
 
-## Getting acquainted with your HPCC environment
+## Getting acquainted with your HPC environment
 
-If you are connected to VPN, log into HPCC from your terminal using:
+If you are connected to VPN, log into HPC from your terminal using:
 
 ```{bash}
 $ ssh username@bmiclusterp.chmcres.cchmc.org
@@ -74,9 +72,9 @@ Check available modules and load them as per your requirement using:
 
 ```
 
-### Handling  batch jobs on HPCC
+### Handling  batch jobs on HPC
 
-Two ways to work with the HPCC: through interactive sessions and batch job submission. Use scratch space for computing and submit batch jobs as follows: 
+Two ways to work with the HPC: through interactive sessions and batch job submission. Use scratch space for computing and submit batch jobs as follows: 
 
 
 ```{bash}
@@ -128,4 +126,4 @@ $ rsync -rvtP  /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/nfcore_
 
 
 ## Remote RStudio
-You can run Rstudio on the HPCC and access it from a local browser, as explained (In progress).
+You can run Rstudio on the HPC and access it from a local browser, as explained (In progress).
