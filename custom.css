@@ -34,13 +34,13 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar-brand {
-  padding: 8px 15px;
+  padding: 12px 15px;
   height: auto;
 }
 
 .navbar-brand img {
   display: block;
-  height: 52px;
+  height: 90px;
   width: auto;
 }
 
