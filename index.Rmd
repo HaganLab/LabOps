@@ -11,3 +11,15 @@ This project provides an overview of the various computational resources we use 
 
 Reach us @ thomas.hagan@cchmc.org or amnah.siddiqa@cchmc.org
 
+## Contents
+
+| Page | What's there |
+|---|---|
+| [Working with HPC](Working_with_hpc.html) | Requesting cluster access, connecting over SSH/VPN, transferring files, and using OnDemand |
+| [Git and GitHub](git_and_github.html) | Setting up Git, GitHub basics, and the lab's version-control expectations |
+| [Acquiring Data](Acquiring_and_sharing_data.html) | The lab's data storage policy and mechanics for sharing large data objects |
+| [Organizing Projects](Organizing_projects.html) | FAIR principles and project-folder conventions |
+| [Containerizing](Containerizing.html) | Docker vs. Singularity/Apptainer, and running containers on the HPC |
+| [Publishing](Publishing.html) | Sharing data and code at publication, and where to publish |
+| [Using AI Tools](Using_AI_Tools.html) | The lab's AI tool policy and practical guidance |
+
