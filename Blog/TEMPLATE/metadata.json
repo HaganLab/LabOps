@@ -1,0 +1,8 @@
+{
+  "contributor": "Your Name",
+  "title": "A short, descriptive title",
+  "date": "YYYY-MM-DD",
+  "description": "One or two sentences about what this is and why it might be useful to others.",
+  "format": "e.g. slides, notes, doc (optional -- delete this field if you don't want one)",
+  "file": "the-filename-of-your-content-in-this-same-folder.ext"
+}

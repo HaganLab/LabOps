@@ -11,7 +11,7 @@
 
 
 
-<title>Git and GitHub</title>
+<title>Blog</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1691,121 +1691,90 @@ border-radius: 0px;
 
 
 
-<h1 class="title toc-ignore">Git and GitHub</h1>
+<h1 class="title toc-ignore">Blog</h1>
 
 </div>
 
 
-<div id="lab-policy-why-we-use-git" class="section level2">
-<h2>Lab Policy: Why We Use Git</h2>
-<p>Per the <a href="https://github.com/HaganLab">Hagan Lab Manual</a>,
-analysis code should be version-controlled and uploaded to the lab’s
-GitHub repositories — this is part of maintaining reproducible,
-well-documented records that anyone in the lab (including your future
-self) can pick up. Documented analysis pipelines and coding conventions
-are maintained under <a href="https://github.com/HaganLab">github.com/HaganLab</a> and the
-HaganLab HPC folder; if you’re using an AI coding assistant to help
-write analysis code, the same expectations apply — see <a href="Using_AI_Tools.html">Using AI Tools</a>.</p>
+<div id="sharing-with-the-lab" class="section level2">
+<h2>Sharing With the Lab</h2>
+<p>Every now and then someone has something worth sharing — a slide deck
+from a talk, meeting notes, a Word doc, an HTML export, anything — that
+doesn’t need its own page but is still useful for others to have. This
+page is a running, dated collection of that kind of thing, grouped by
+month.</p>
 </div>
-<div id="set-up-git-and-github" class="section level2">
-<h2>Set up Git and GitHub</h2>
-<p>There are plenty of resources out there to help you configure Git and
-GitHub in more depth — the steps below are just enough to get you
-started.</p>
-<div id="for-mac" class="section level3">
-<h3>For Mac</h3>
-<p>Use this command to download git 👉 <code>brew install git</code></p>
-<p>Then verify it installed correctly: <code>git --version</code></p>
+<div id="contributing" class="section level2">
+<h2>Contributing</h2>
+<ol style="list-style-type: decimal">
+<li>Copy the <a href="https://github.com/HaganLab/LabOps/tree/main/Blog/TEMPLATE"><code>Blog/TEMPLATE</code></a>
+folder into <code>Blog/</code>, renamed to something short and unique
+(e.g. <code>Blog/jane-hpc-tips/</code>).</li>
+<li>Drop your file into that folder — any format is fine.</li>
+<li>Fill in <code>metadata.json</code> (contributor, title, date,
+description, and an optional format tag).</li>
+<li>Commit/push or open a PR.</li>
+</ol>
+<p>Full instructions and a filled-in example are in <a href="https://github.com/HaganLab/LabOps/blob/main/Blog/TEMPLATE/README.md"><code>Blog/TEMPLATE/README.md</code></a>.
+The list below updates automatically within a week of a new submission
+being merged, via a scheduled GitHub Action — no need to touch this
+page.</p>
 </div>
-<div id="for-linux-ubuntu" class="section level3">
-<h3>For Linux (Ubuntu)</h3>
-<p>Use this command to download git 👉
-<code>sudo apt-get install git</code></p>
+<div id="recent-submissions" class="section level2">
+<h2>Recent Submissions</h2>
+<div id="blog-list">
+Loading…
 </div>
-</div>
-<div id="create-an-account-on-github-and-create-a-new-repo" class="section level2">
-<h2>Create an account on GitHub and create a new repo</h2>
-<p><a href="https://github.com/" class="uri">https://github.com/</a></p>
-<ul>
-<li>Create a new repo by clicking “New repository”</li>
-</ul>
-<div class="float">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAABnCAYAAAAg///aAAABX2lDQ1BJQ0MgUHJvZmlsZQAAKJF1kMFLAkEUxr81wzChgoIOHTwFgZmpUFezqEBCtMiCDuusrcGqw7pR3br1D0gUnbpEpzrFXjr0JwRRQV2CDh2jgr2UTG+0Uove8Ob7zcd7w+MBLp/KueEGUChaZmp6wp9ZWvZ7nuBFD/ro7lBZmceSyQSV4Ftbw7mBIvVqWP6lPV7PvJyt7J28Kqc7B8HDv/Ut4dVyZUb6QRll3LQAJUSc3LC45G3iXpOGIq5I1ut8LDlb5/NazXwqTnxJ3M3yqkb8QBzINvl6ExeMdfY1g5zelysupEn7KQcwiSkk6PiRRhhjlKOYQ+afnmitJ44SOLZgYg068rCoO0YOh4Ec8SyKYAgiQBxGiDIid/17hw3P4MD4PeDab3jsGbAdoEs0vMFNeo8AFxWumurPZhXHXV6NhOvcaQPtu0K8LQKeIaB6K8S7LUT1CGi7o17nE9fsZr/hGBIxAAAAVmVYSWZNTQAqAAAACAABh2kABAAAAAEAAAAaAAAAAAADkoYABwAAABIAAABEoAIABAAAAAEAAAD+oAMABAAAAAEAAABnAAAAAEFTQ0lJAAAAU2NyZWVuc2hvdChSN70AAAHWaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA2LjAuMCI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIj4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjEwMzwvZXhpZjpQaXhlbFlEaW1lbnNpb24+CiAgICAgICAgIDxleGlmOlBpeGVsWERpbWVuc2lvbj4yNTQ8L2V4aWY6UGl4ZWxYRGltZW5zaW9uPgogICAgICAgICA8ZXhpZjpVc2VyQ29tbWVudD5TY3JlZW5zaG90PC9leGlmOlVzZXJDb21tZW50PgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KVs6/XgAAHM1JREFUeAHtXQdAFUcT/qQIImDvDTCiKKgoKirWoCb2ltg1Grsm2E30TzOaxBgsscXERNNMbNg7toAaey8UWzQoClgQpIn/zuI9H69QXiGAswnv9vZ2Z2e/89udnb27LfBcBHBgBBiBfInA+dCb8HCtotU2C60UTmAEGIF8jwATP9/fYm4gI6CNABNfGxNOYQTyPQJM/Hx/i7mBjIA2Akx8bUw4hRHI9wgw8fP9LeYGMgLaCDDxtTHhFEYg3yPAxM/3t5gbyAhoI8DE18aEUxiBfI8AEz/f32JuICOgjQATXxsTTmEE8j0CTPx8f4u5gYyANgJMfG1MOIURyPcIMPHz/S3mBjIC2ggw8bUx4RRGIN8jYGWqFqampuLJkyeIi4tHcnIynqU+g6WFJaytrVG4sB3s7e1hYcH9jKnwZjmMgDEImIT4T+Li8PjRY9jYFISdXSGhTyHQ9z2I6HRMSUlBRMQdFC1WFPaFCxujL5dlBBgBEyBgNPEfPnyEhMQEJBeMx8bIH/Sq1K5UL8THWSMlOQVFixbRmy8vXKCO7PHjWBQvXsxgdaOiolCiRAkUKFDAYBlckBEwFAGjbG8a6ROTElHI1haPkmNwKyFc79/D5GjYinxJyUmgcrkpeDdtjj9Xr82ySrO//gYtX2+rM/974yZg0pQPdF5r0qwlVv25WnQaj+HVqClW/vKrznycyAiYGwGDR3ya05N5TyN9ZPxNPEi+j3I22t/2UhrwKCUGN+JC4GBdDCmPUmBXqFCumfNHRt5D/NN4RdVMj3379kaDBl468z2IeSCmPDY6r8l6hA/E0dER8/znoGkTb535OJERMDcCBhOfHHk0pyfznkZ6Iv2A8hP06vvHnYWqfP3LjZeOQCKAZiDn4Nz5C3Ds2HEUKVIEQ98djJYtmuPcufOYPccfvr6tsXHTFrg4O6Ffn96YM3ee8CMAUyZNgFf9evjks88lsf755xYi7txB39690K1rZ1nNyp9/xdZt20GdVvs335Cylfpv3LiJQUOGiulIPMaMHinrjI2NxVdidD9z5izKlCmDce+PRe3aHjhx4iT+CgpG2za+Uta8BQsRfOgQPNzdhUWTrCJ+dEwMZn/tj9CwMPTo1lWpCs+ePcP6gA1yylO6dGnZtkVLvwNNm7p07ojt23fi8xmfiDY6IyOdVQI5wghkEwGDTX0iqJWVYf0GOf2ovK7whzCF9wTuRZ8+vWBhaYHho8bIVQIi0V/Bh7B3734xUjbGuoCNGDXWD76tWwvHYQQ+FYSncOr0GSxZugxOTlXk/JnMbuqkTgvyLly8RBLa07MuPpv5hSSwogN1CA0bNMB9MfceN2GyTP520RLs2LkLfoLwtDIxQ5ShcF10En8fPSbjP634GfO/XYRaNWuCOoojfx+V6fQzZeo0bN6yFS2aNxOd1WbZKVA6OTwPio7jzt27SExMxJBhIxASEgof0a5Fi5fKdj6JzVxnksWBETAEAcOYK2qiJTvy3ishOjkSNKpTaFG8M8oLC+Be0r/YGx0g0yiuBCJ+Wnkl5eWRRvj6YuS+ciUECQmJePo0AZH37qkyfPy/aXB1rYZVf6xGVzE6Dhs6BNQprFm7TpWnVcsWGO/3HujYqWsPnBXWAnUW69f8iZOnT0viUeYbN2/Cy6u+LDdoYH+MGTUCjg4OmPbRJ3IeblOwoHTiBR86jE4dO0gCqyp5EQkSI31DIWPmjE9lypmz5+SRyH3o8BEMHfKO1KW/mB7Ua9jkRamXByJ85L37WPXrHDTzaYqqVati5Jj38Fz851m3ToY6k5S5878FWRzqgdo+Ydz76kkcZwTSIWDwiE/r9GQyKyEpNUHl2EtITRvNE1OfqtIorgQydam8rvDl7Dno238QTpw8KUdqzTyFhG+AgpWVJQoKYlKw1rA8HBzsZXqRImlTiedCz0BhKbTybYedu3YjKjpaXlf/cRCEp6AqI4g7ThCIOppbt25jtLAuOnbupuo0lLI0NVDKUho9r0CBPP80mivXKF2XAz/+aRouSj5HxzQ9SEZmOlMeIjgRXQlMegUJPmaEgMHEp4dzDA004usrf1iMkh4e7vhgyiTUdKthaBVa5Y4eOwbqND75aLq0GLQy6Ej48aeV0k+weOECjBoxDFevXZcWiHpW0vXQkSPYtXsPAjZswvnzF+RlenCpRo3q+GP1GtGJnYL/3AXSF6FeluJuIg91XIvFHJ+mI8u+X67KklWdFfIz6VXQcSQTBAwmPv3DJgIbGqi8rjD4nUGCAGfQwNsHt/99OT3Qtd6tnqbElaOm7B7du8p5emOfltixY5fmZZ3nRGpywlWvVRvLlv+IqZMnvnhAibKnrb+Tw8+9Vk0MGzkaCxYuStepzP5iphz1u/XsJacVmpZJASGDHJgzP/8UR478ja493pJPOirKZEdnIj+b9wpyfMwMgQJiLip84tkPtBZN8/TVkYulOa8uoWfZkXAp5CbTlXm/cp28/+TVJ8egLq8+5SMzmf5o3d/UgZ4hyO7Tg+RtJxM8o44uPv6pWqeQXmtyZJJzMKOQkvJMtDkZIaGh6NilB7ZtCpArCFTGEJ0zqouvvToI6NtCy2DnHs1Z6THcSnZVJcGLW5dG6xLdJaKXnpzA0YeBKGzpAOoEKByM2Yz7SRGoWMhFOu3Kli0q03X9UKdg6IqBLnnqadklPZXNypOGaY8qq9f0Mp4Z6Skn+SwUv4VT5cooKJZKlWCIzkpZPjICuhAwmPg0+tGz95ViXFHS5iysYSNHeaqESK+s7dPIL9MsAlHWtjJcrD3gKJxuGY2essAr+uNWowaCDu59RVvPzc4pBAwmPilII5FTsitaoyceIFKlcwnrMkh5noySBcuq0tzsPeGIknByqJZtU1slhCOMACNgEgQMnuOr105zUOXtPEtLS9WSlzKq0/IdrcnTSM9mqzpyHGcEzIuAyef46uoSmenZ+4zex6c5vdIRqJflOCPACOQ8AkaZ+urqEqnJS6/PU6+el+OMACPw3yJg+EL8f6s3184IMAJGIMDENwI8LsoI5FUEmPh59c6x3oyAEQgw8Y0Aj4syAnkVASZ+Xr1zrDcjYAQCTHwjwOOijEBeRYCJn1fvHOvNCBiBABPfCPC4KCOQVxFg4ufVO8d6MwJGIMDENwI8LsoI5FUEmPh59c6x3oyAEQgw8Y0Aj4syAnkVASZ+Xr1zrDcjYAQCTHwjwOOijEBeRYCJn1fvHOvNCBiBABPfCPC4KCOQVxEw2Yc48ioArHf+RODsrSvYfv4gDoWfwplblzNupMYH5nXtzaCZRnsiKCHt2nO5VyN9rd7awkpsgAakPk+Vn6Gj7dDoI/ZpR4qLk5fFUbigHYoUske3em3Qs/4bqFamiiLabEeTfHPPbNqxYEbAAATuPorCB+u/wbaLB8T+ahZ4bi1YpkY0A0Satwj1A8niJzkVrV0bY2bXcSYjv75v7rGpb95bytL/AwR+OrQe2y4dxPPC4sOvBXM56QkfoSLpSfruC/sba0/sMDtqTHyzQ8wV5DQCvx3ZhOc2uXmI148I6b393EH9GUx0hYlvIiBZTO5B4H5sDGCZN4lPet+L1d7N2dTosnPP1IiyvFyPgLWlFRZ0/RBdarWGjdXLrcrUFZ+0ZQ5WHt+onpRj8bikl1vKm6tSJr4eZGNjY+X+fbS1tjHBVHKM0YHLpkego1sLuJV2QYslg5AoNirVDDPajUFp+xKayTl2blHA/Ia4UcQP3LsPp06f0QLE9/XWqOdZVys9qwkPHjzEDz/+pMpermxZtGrVAhUrVFClmTvSu+8AVKhYAd8vXYynT5/i8eNYlClTOtvVqsvJdmEuYBYEqpVywoW74QiP+ken/Cd6Rlx7Gzt82X48vju8Ghcjw2XZT9qOxpZLB3Dq9iWdsgxJtLKwNKRYtsoYRfxbt2/j7NlziIqOxqXLV+BV31PsqGOHunVqZ0sJzcwPHz3EwsVL4Vm3DkoUL45ffv0NX/vPxdaNAahSpbJmdrOc/2/6h6rtvjZu2oIpH05HyMVzerfC1qeEuhx9eTg9byBgZ10IfTzbw6tSLWktJAlroYt7a9mJKMSnNX0Dd55XgZATxDfKphg8aCB+/3UlJo73k0r7z5ktz9u28RVk/R29+vbHgEFDELBhk7yenJyMfgPewfKfVmLQkKHy2r79B1QN1oyMGTUCK378Hps2rAPtUb8nMG0X2aDgQ3h32Ei81asvVv78a5ZkB4syw0aMQreeb8N/3gLQfn4UwsLCMXzUGLTv1BUTJ09FVFSUTN+9JxBBhw7j4qXLKutjyLDhCA+/Kq9n1L7FS75Dn34DsXnLVihyqFBCQgJmzvoKnbr2wPiJk3HzZtqIQ9OB6R99gg5ChyFDR+DcufOyDv7JnQhUK1kFH/mO0lJuuu8IhH+4E+cmbUCP2m3RxMkTZyYGgIg8600/bBy8UJZZPcAf7zbqoVVeSUh6lqJEzXY0ivj6tFq9Zh2mf/wp6terByenKvCbMAmBe/dLsv0lCOg/d76wCuogTmy2OUKQ7tat2/pEyXSFbCVLlpREHTJ0OEqVKol27dri81lfYt36gAxlh4aGYbAoYyFuwBtt2+K7Zd/jq9lzpOwJk6aAphbj3h+L8KvXsOyHH2X6mbNncfnKFZQsUQK1PTxk2pvt2smtwTNr31Ihn6Y6lcU+94ocEvDh9I+wees29O/bB3fvRqL/wMFITU3Ft4uWYMfOXfATOhQubIcZM7+Q9fFP7kTgq33LMbLJ22ju4iWW4NNWD7yr1MF7Pv3wzp/TsCh4FRZ1m4YrkddQxkH8+ylfHR1qtoCPcz1UKlpWlKuPsxFX9DbOWItBr2C1C0aZ+mpy0kVplPNu2ABTJk2Q6X8FBQvi74VP08byfNjQIRjv9x769u4FL++mOHbiBCpVqphOBp34jZ8ES0sLPI59gpbNm6GN7+v4Y/UaJCQmSVIlJychSVgRO3buRscO7fXKfhDzQHQMqVi4YC4KFiyIa9evY7ewHqZP+0Ce37hxExcuXsJH4rx+/Xrp9KB5fSPRlvUbNuKtnj2kqZ9Z+94bMxojhg9NJ4du5rqAjSgtOqyYBzEoKY7Bh49IC8JG6EQ+hGBhYXTq2AEtRFs5mBcBR9vCaOxUFxbCNNcMZYRj79bDu5rJqvO1Z3fCuXgFLOo+HQ42hWW6WxkXObIvf2sGyBdgbWkNR/EY7rGb5zGgfmfYitWDQ9dPY0KLd0A+hFO39T9GTI/2mjuYhfixT56IkSsNEGoAxWl0V4Kjg4OM2tvby2N8XLxyKd3x/ffGCIdeeYx5fzyaik6DRkMyiynQzrwUunTqgMaNvWWcfnTJJn2I8PRHgepVyi9bugi//LYKQcHBmLdgIQYN6IeZMz6V+fT9ZNa+YsWKaRVVphbUAcWKjox8F73ffgs2NjYYJzrB0qVLY/+Bgxg91g/OwkravXObfPZbSxAnmASBDsKzX79iLSQ90/bql7ArihO3L2ZYz5St/gj9YLtqOfBa9G0kJCeiy4qx0gqguX/Eo3sIDDsCcgCuPrMDl4QF8JlYMdhwPlA+x59hBWa+aBZT30uMmkf+Pir/aF5+WTj+6tXzVDXl9z/+xImTpzB3/gKZ5u5eS3VNPVLVxRmdO3VEWzHS07z58ePHwoGYNiLXdKuBgf37gUj2XJjLStAlm8rExcdLfwA5Ibdt3yFHdjKz5/jPQ9myZbB61W9o0riRHPkVWcrRzi5tSS/40CEkJSVJHTJqn1JO/WhlZSWdn69VdZF6kxVBnSHtLvyj8HlE3LmDxQsXYNSIYbh67bpYSUhQL85xEyLwLPUZ9ocfg/ucLqg3t6fW3+aL+3XWRi/dUEgV1huttbdfPhLJouOg9KBrJ7H+/B7sH7UCB8f8Auo8qFPZF3ZUlgkUj+IGhh5WxWVEz0+eNfXfHzsaISGh0pFHpnrXLp3kP3Zy7lGoIua+/YSTjwCjf+jkvdcVlDeiJk0ch3btO2HJd9/jgymT8P6YUZg8dRqeCOLUqO6Kdwe/oyquT7af0Onrb+aKDiBO+hdmiVGdtvauVq0aPp0xE1M//B/KlC6F+f5pc38SqMzfWrdqCRdnJ7w7fBQ2BayFvvalpOh2yihy5n0zB8NGjkaDxj4g836saEexYkXh4eEupjUTsXjpMhQqZIupkydme/VABQBHMkUg6PpJDPTqgsZiXr7l3SUyPxF31t5lGOTVFd5VagtT/46WnKi4Byj5cVNV+tmIEJT7rKXq3G/jl6AHf2gdPjElSabTsp96GfW4quB/EDHr23nkxSZyKSY2nVdz84D/11+he7cu0rGlXMtu28l0VkZMKpsV2VQmISFRThnU66ORn+bYRYsWUU/WilN5S0tLVbpm+1QXMonQdKWQWPa0snopi4rQyoWjo4PELBMRfDkDBEqN88Zzx/TYama3K2gLzwpu2DR4EVKEBXD0n3OStN3cX5dZN1zYi7D7NzWL5ci5TbwF/v0myCR16Xs7zyxzfEVjW1tbJSqP1Ak4idGe5thk+hoTiIBkJishK7KpDPkJNAOVzYz0VEad9HSu2T5Ky0pweOHj0MybFR00y/C5YQjEJyUgNiEO03cswM4rwegt1ueJ6F/v/8kwgXmslFlH/DyGBaubTxBo+kVvhMSJZyTy4os6z56jXrHq2D1phUnuhr4R3yzOPZNozEIYAQMRaOXaCAUSzb8kZqB6GRYjvRs56/Z5ZVgwmxeZ+NkEjLPnfgTe9noTb7r6oEDcMxRIEh1Abu8DhH6kJ+nrW9UbHTxamh1k4ybaZlePK2AEso9Abaca8Gs1UD4ldyD8OELv3ci+kBwuUcq+OLrX98VA765wreRi9tp5jm92iLmC/wqBOPFgWEJiAp6lPDP6xRlztoGWrS3FCo+tja1O57Mxdeub4/OIbwyqXDZXI0ArOLpWcXK10jmkHM/xcwhoroYRyE0IMPFz091gXRiBHEKAiZ9DQHM1jEBuQoCJn5vuBuvCCOQQAkY79xLF22oh4ddx4XIoQq/eQHKy7hdVcqg9XA0jkOcQsLa2gmtVJ7i7uaL6a87yBS5zN8Ko5Tx6aWXlHxtQomQJuFSphLJlSplbX235uh7O0Py2gq482pLSpWStSNZypRMsTpS39TTTDTrXbGtWhRim+kvphtb7UgLHXiCQlJQslh0TcelKKP6NuIvhA9/Wei/EULD0LecZRfygv08gOuYRWvh4w0q8fqv5EouhynI5RuBVQ4AG0RTxkZZ9QUdQukRRNPP2MgkE+ohv1Bz/xOnzcHauLEwTaya9SW4TC3lVEaBBk3hUq/prIF6ZOxhF/OiYh6hSsby5dWT5jMArg0DFCuWEFf3Q7O01ivg0TWRnntnvEVfwCiFAH/801v2SFbiMIj5VUNDaOiv1cB5GgBHIRQgYTfxc1BZWhRFgBLKIgNHr+FkxS56It6R27tmXTiW36tXk56PXBGzBp9MmpruW0cmxk2dw459beLtbp4yy5Yprm7fvxiPxZeABvXuCnnegZRsH+5efHc8VSrISryQCJhjxM6c+bToZ/PdxlBLr/cpfYTs7OIm1/7e7Z4/A9Hnr+HjzbyNsin8Njbw80bJZEynquOiw/ly30RRiWQYjYDQCRo/4WX0YxUosV7TwSdtJR9E68t59XLwcgpo1XMUSxllERz9AhNhaij7D3axJI5BVQOHCpSsIPnJMvLNshWJFXn5gU5FDx/tR0dghrIoYsR1WFbErT8c328Ba44OeW3bsEV/8tUaYeNLwjTatUEx8VXf33oOIiokRT03VQKvmaSSlfEXE125JNyvhw2glyPuai5OsLjT8qtDlOBLFAxeedTzg3SDtO/8XRN6gw0fll4MbN6yPeuJaxJ1IxItOjzCia7QRx2+r16N/rx5io9EYBO7/C/fuR6OqSxW84dtKLokSDpH3oiQOrzk74XZEBF5v4YPy5cpKXFb8thr9enUHdZwcGAFDETDBiJ+1qukT1rf+jVD90dZX9KGEsKvXpYB796MQeCAI9et6wNmpMn5etVaS6E7kPdA/do9abmhQrw6Onjits8JdgQcEWR3Rvm1r8QjxNUk0zYzXxFZZp86cF9txNZHf0F+6/Gf5Hfs2rZoLi+QYDgmrhALl273vLzRv6g1nYZV8v+I3uY0X6fjDylWoXq0qfBo3xObtu3Dm/EXZCfz48yr4eDdAC1Fm5579eCo+JU75I+7cFfvvFZedW+lSpUQn0lS06zmWiLqtRafSzrclQkVHFLBlh6ybyhwIOow67m6izTXEg1FWOH7qrLx26UoYHohPcDPpJRz8YwQCOUb8FPEVlD/XbVL9RUXFaKntWdsdtd1rwlcQkXYTIYsgVJC4hhj5mwpS1fWoJcmoVVAk9OrZBa6vuUirIVqMprf/1d4Qgcq1ad1cjO7V5Tf5IwXJaC872jSzkPgU+JFjJ1Wi24p8tUQ+35bNZB7qDK6EXZWkJ12oI2rp00Tsphui2jvg3AWxH5pYjpkybrSUpwiztbURW2YVE4QthArlyyLy/n05XenepYOU17VDOylHyU+dX0Ox5Th1GA296uL0uQvyEh0pnQMjYCwCRpv6worNUiATe7Jf+q2Fr12/ma4sEYQCibQVe8rRyJgoNsCwtSko0+nHRi2uShSRBUuWC1PZQpKfPmUk/tcZaAcbCsoWVbSRBoWK5cuhktrDSLSnnRJIFzLtaQMN9fopTs9Y08hNbSPH47adgVgTsBlTx49RimsdaVMPwkNRUZGjZFTfZMTF2UnkK4Cr12/gckgYenRO2xxUyctHRsAQBIwf8TP37Rmil6pM5UoV5D94MnGJfGSqawaaNty6/a/w9HdG29YtUFZshUVkzSjQyEvPIMj5tZjv0/SCOg4lHDt5GrQlFk01aBWhcsUKYjOQSipdqM4Tp8+J7cAqSr/CX2IO79vSBxPGDpedyn0Ni4bewHr46LHszKhumuYQkcmyOXL8lJSj1K1+pM6BRv3vV/wupx0ODvZy003yBVC4duMf3Lx1W8ZJZ9ojkAMjkBkCxo/4mdUgrit74GlllSOzMu6Jo/ow/eK0hutr0ok28+v50qQmAqpnI5lE4KZizu2/8Du5+yyZ1VqZSA8aY18UplGVltlW/r5WOs3sxTLb0IF9VCpS3g8++UKe+7ZqhnJiY81y4qxxQy98NXeR2Hb7mXQ+kuOP2kfTi+kzZovR3wruNasLB2MFhISFq+pzc62GrcIamDlnPj6eOh4D+7yF39cEyE6CphvD3un3ou6XOirKNKhXF9t37xMdQJqZH37tBtZu2AqaGpE/gCyGsmI7b0qzFzsTk7OUAyOQEQJGvZ03fdY8TPEboeU9z6hCQ6/R6EsEy+gNQFoNoO2wMsqjq34yvZVpBl1fsHQ5WjdvKn0LgoZa232Ro5L+NLcBSyYddeQnmRTIOEoVHYa6frQ8qW7ay4waP/S6Jq0GfDZ9sgprshQID8XgonqVNI3ifJrHEJjlvxizpo83idb63s7LkRHfFC3QJJkumTTXNiSok57KFxc72NIcX3M5UJFNnQv9aQZ9+ZV8RE510lN6ZqQnh+OuvQfQq3uXdPooVhTJVIKSppzzkRHQh0CeIb6+BpgjnaYAuSXQMwH0x4ERMCUC2sOWKaWzLEaAEciVCBhFfDIzaX7MgRFgBEyHgPr0zXRS00syivgliheVS1TpRfIZI8AIGIpAtHiYjHhl7mAU8b08PXAp9Kq5dWT5jMArgUCcePns2KlzIF6ZOxhF/CYNPHFHPIu+fc8B8TLJXXPryvIZgXyLwAPxcFeQePnrrnhJjXhl7mDUOj4px9/VN/ctYvn5HQFzfldf3zq+0cTP7zeF28cI5GUE9BH//6fToSqZLzyQAAAAAElFTkSuQmCC" alt="Creating a new repository on GitHub" />
-<div class="figcaption">Creating a new repository on GitHub</div>
-</div>
-</div>
-<div id="clone-repo" class="section level2">
-<h2>Clone Repo</h2>
-<pre><code>mkdir projectname
+<script>
+fetch('blog-manifest.json')
+  .then(function (response) { return response.json(); })
+  .then(function (entries) { renderBlogList(entries); })
+  .catch(function () {
+    document.getElementById('blog-list').innerHTML =
+      '<p><em>Could not load the submissions list. Try refreshing, or check <a href="blog-manifest.json">blog-manifest.json</a> directly.</em></p>';
+  });
 
-git clone &lt;repo-url&gt;</code></pre>
-</div>
-<div id="configure-git" class="section level2">
-<h2>Configure Git</h2>
-<pre><code>git config --global user.name &quot;amnahsiddiqa&quot;
-git config --global user.email &quot;amnahsiddiqa@gmail.com&quot;
+function renderBlogList(entries) {
+  var container = document.getElementById('blog-list');
 
-# confirm your config
-git config -l</code></pre>
-</div>
-<div id="make-changes-to-remote" class="section level2">
-<h2>Make changes to remote</h2>
-<p>Remember the order: add, commit, pull, push :)</p>
-<pre><code># Stage all changes in the current directory
-git add .
+  if (!entries || entries.length === 0) {
+    container.innerHTML = '<p><em>Nothing shared yet — be the first! See the Contributing section above.</em></p>';
+    return;
+  }
 
-# Stage a specific file, e.g., filename.tsv
-git add filename.tsv
+  var byMonth = {};
+  var order = [];
+  entries.forEach(function (entry) {
+    var monthKey = entry.date.slice(0, 7); // YYYY-MM
+    if (!byMonth[monthKey]) {
+      byMonth[monthKey] = [];
+      order.push(monthKey);
+    }
+    byMonth[monthKey].push(entry);
+  });
+  order.sort().reverse();
 
-# Commit your changes with a meaningful message
-git commit -m &quot;Add analysis for Figure 1&quot;
+  var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                     'July', 'August', 'September', 'October', 'November', 'December'];
 
-# Fetch and integrate changes from the remote repository
-git pull
+  var html = '';
+  order.forEach(function (monthKey) {
+    var parts = monthKey.split('-');
+    var label = monthNames[parseInt(parts[1], 10) - 1] + ' ' + parts[0];
+    html += '<h3>' + label + '</h3><ul>';
+    byMonth[monthKey].forEach(function (entry) {
+      var href = 'Blog/' + encodeURIComponent(entry.folder) + '/' + encodeURIComponent(entry.file);
+      var formatBadge = entry.format ? ' <em>(' + entry.format + ')</em>' : '';
+      html += '<li><a href="' + href + '">' + entry.title + '</a>' + formatBadge +
+              ' — ' + entry.contributor + ', ' + entry.date +
+              '<br>' + entry.description + '</li>';
+    });
+    html += '</ul>';
+  });
 
-# Push your committed changes to the remote repository
-git push
-</code></pre>
-<p>See more beginner’s tips <a href="https://render.com/blog/git-organized-a-better-git-flow">here</a></p>
-</div>
-<div id="how-do-i-go-back-from-my-current-state-to-a-snapshot-made-on-a-certain-commit" class="section level2">
-<h2>How do I go back from my current state to a snapshot made on a
-certain commit?</h2>
-<p>There are two types of commands, and you should choose carefully
-between them based on their purpose: <code>git reset</code> and
-<code>git revert</code>.</p>
-<ul>
-<li><p><code>git reset</code> is a rewind call: it moves your branch’s
-history back to a specific commit, and everything after that point is
-gone from the branch’s timeline.</p></li>
-<li><p><code>git revert</code>, on the other hand, undoes the changes
-made in a given commit by creating a new commit that is the reverse
-(reciprocal) of it — nothing is removed from history.</p></li>
-</ul>
-<pre><code>(base) ➜  test_demo2 git:(main) ✗ git reset 3bbe6d4 --hard
-# output: HEAD is now at 3bbe6d4 Initial commit
-(base) ➜  test_demo2 git:(main) ✗ git reset --soft &quot;HEAD@{1}&quot;
-(base) ➜  test_demo2 git:(main) ✗ git commit -m &quot;Revert to 3bbe6d4&quot;
-</code></pre>
-</div>
-<div id="issues-and-commits-for-better-collaboration" class="section level2">
-<h2>Issues and commits for better collaboration</h2>
-<ul>
-<li>Reference an issue’s number in a commit message
-(e.g. <code>Fixes #12</code>) to automatically close it when the commit
-is merged.</li>
-<li>Use issues to ask for help or to track work that needs doing.</li>
-</ul>
-</div>
-<div id="terminology" class="section level2">
-<h2>Terminology</h2>
-<p><strong>Commit SHA (Secure Hash Algorithm) key</strong> — commonly
-referred to as a “commit hash” or “commit SHA-1,” this is a unique
-identifier for a specific commit in a version control system such as
-Git. It’s a cryptographic hash value generated from the commit’s
-contents and metadata, and it’s used to uniquely identify and reference
-a particular state or snapshot of a repository at a specific point in
-time.</p>
+  container.innerHTML = html;
+}
+</script>
 </div>
 
 

@@ -17,6 +17,8 @@ navbar:
     href: Publishing.html
   - text: "Using AI Tools"
     href: Using_AI_Tools.html
+  - text: "Blog"
+    href: Blog.html
 
 output:
   html_document:

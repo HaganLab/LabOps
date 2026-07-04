@@ -20,4 +20,5 @@ Reach us @ thomas.hagan@cchmc.org or amnah.siddiqa@cchmc.org
 | [Containerizing](Containerizing.html) | Docker vs. Singularity/Apptainer, and running containers on the HPC |
 | [Publishing](Publishing.html) | Sharing data and code at publication, and where to publish |
 | [Using AI Tools](Using_AI_Tools.html) | The lab's AI tool policy and practical guidance |
+| [Blog](Blog.html) | Slides, notes, docs, and anything else lab members want to share, organized by month |
 
