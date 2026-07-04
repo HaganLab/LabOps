@@ -33,5 +33,3 @@ Increases accessibility and reproducibility, promotes detailed descriptions as w
     * MethodX: the nitty-gritty of the methods (computational and experimental)
     * GitHub: for code mostly
     * Zenodo: for development and review as well as publication, integrates with GitHub
-
-For how the lab actually runs its analysis pipelines (e.g., nf-core/rnaseq) before getting to the publishing stage, see [Containerizing](Containerizing.html).
