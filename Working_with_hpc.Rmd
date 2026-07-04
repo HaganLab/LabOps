@@ -118,4 +118,6 @@ $ rsync -rvtP /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/nfcore_R
 
 ## Using OnDemand (Browser-Based HPC Access)
 
-[CCHMC HPC OnDemand Tutorial](https://hpc.research.cchmc.org/node/67) — OnDemand is a web portal that gives you access to the HPC cluster directly from a browser, no SSH client or terminal setup required. Through it you can launch interactive apps such as RStudio and Jupyter sessions running on the cluster's compute and memory, browse and manage files, and submit jobs — all without moving your data off the HPC first. You'll need HPC access first (email `help-cluster@bmi.cchmc.org`, per [Requesting an Account](#requesting-an-account) above), then log in at [ondemand.research.cchmc.org](https://ondemand.research.cchmc.org) with your CCHMC credentials.
+**OnDemand Portal (Recommended)** is a web interface which allows you to upload and download files; create, edit, submit, and monitor jobs; run GUI applications; and connect via SSH — all via a web browser, with no client software to install and configure. For more information, see the [CCHMC HPC OnDemand Tutorial](https://hpc.research.cchmc.org/node/67).
+
+You'll need HPC access first (email `help-cluster@bmi.cchmc.org`, per [Requesting an Account](#requesting-an-account) above), then log in at [ondemand.research.cchmc.org](https://ondemand.research.cchmc.org) with your CCHMC credentials.
