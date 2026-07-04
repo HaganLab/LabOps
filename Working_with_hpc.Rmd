@@ -88,10 +88,6 @@ $ bkill 0
 
 ```
 
-### Reference genome/file locations (not all there, may need to download)
-
-Supporting databases and some related files that we use are under `/HaganLab/databases/`
-
 ### Transferring files to and from HPC
 
 - Trailing slash on sending side transfers only contents of the directory, without slash it transfers directory itself and contents: `rsync -rvtP local/files/location/ yourusername@bmiclusterp.chmcres.cchmc.org:/scratch/yourusername/HPC/location`
