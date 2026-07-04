@@ -109,10 +109,6 @@ $ rsync -rvtP /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/nfcore_R
 - FileZilla instructions: use `bmiclusterp2.chmcres.cchmc.org` as target and `22` as port together with your CCHMC credentials (your username, password)
 
 
-### Working interactively on the cluster
-
-- In progress
-
 ### From your local terminal/RStudio
 
 **These R packages may also be useful for connecting to a remote server from your local environment:**
