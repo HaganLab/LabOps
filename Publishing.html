@@ -1340,6 +1340,7 @@ color: var(--hagan-navy);
 
 .navbar-default {
 background-color: #ffffff;
+background-image: none;
 border-color: #eeeeee;
 box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
 }
@@ -1402,6 +1403,17 @@ background-color: #f4f0f8;
 .navbar-default .navbar-nav > .active > a:focus {
 color: #ffffff;
 background-color: var(--hagan-purple);
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+color: var(--hagan-navy) !important;
+background-color: rgba(118, 64, 153, 0.12) !important;
+border-color: rgba(118, 64, 153, 0.3) !important;
 }
 </style>
 

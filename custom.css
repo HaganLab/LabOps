@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6,
 
 .navbar-default {
   background-color: #ffffff;
+  background-image: none;
   border-color: #eeeeee;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
 }
@@ -105,4 +106,20 @@ h1, h2, h3, h4, h5, h6,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
   background-color: var(--hagan-purple);
+}
+
+/* TOC sidebar (tocify uses .list-group-item, not .nav-pills): the
+   cerulean theme's bright blue active-item highlight (#2fa4e7) doesn't
+   match the brand palette -- swap it for a light, low-opacity purple
+   tint with navy text. */
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus,
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: var(--hagan-navy) !important;
+  background-color: rgba(118, 64, 153, 0.12) !important;
+  border-color: rgba(118, 64, 153, 0.3) !important;
 }
