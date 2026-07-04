@@ -1739,7 +1739,7 @@ shared location</li>
 purposes</li>
 <li>Describe data: origin, what’s been done with it, what the
 columns/rows mean, etc.</li>
-<li>keep data files together with their metadata and any processing
+<li>Keep data files together with their metadata and any processing
 scripts when applicable, either physically or with a reliable link
 between them.</li>
 </ul>
@@ -1749,14 +1749,14 @@ objects to and from remote repositories from within your working
 directory, scripting everything, instead of copying data manually into
 the project folder. This not only makes work easier, but also helps
 maintain data provenance and promotes transparency and reproducibility.
-Github repositories, however, are (currently) limited in size and are
+GitHub repositories, however, are (currently) limited in size and are
 therefore not optimal for sharing large data objects and research
 projects. Instead we can use services such as Synapse and RStudio
 Connect and tools such as <a href="https://docs.globus.org">Globus
 CLI</a> and the R <a href="http://pins.rstudio.com"><code>pins</code>
 package</a>. In addition to providing a way to incorporate data transfer
 in the script, these tools also manage the caching and check for updates
-beforing re-downloading data. The caching ensures that we still have the
+before re-downloading data. The caching ensures that we still have the
 latest version available in our system in the case that the original
 becomes unavailable for whatever reason.</p>
 <p>Sharing data between “native” projects on the same file system can be
@@ -1773,20 +1773,19 @@ clients (see below) or with <code>pins</code>.</p>
 </div>
 <div id="from-synapse" class="section level2">
 <h2>From Synapse</h2>
-<p><a href="https://docs.synapse.org/articles/" class="uri">https://docs.synapse.org/articles/</a><br />
-Often the best way to work with data that live on Synapse is to
-download/upload them directly from Synapse using its <a href="https://r-docs.synapse.org/articles/synapser.html">R</a>, <a href="https://python-docs.synapse.org/build/html/index.html">pyhton</a>,
+<p><a href="https://docs.synapse.org/articles/" class="uri">https://docs.synapse.org/articles/</a> Often the best way to
+work with data that live on Synapse is to download/upload them directly
+from Synapse using its <a href="https://r-docs.synapse.org/articles/synapser.html">R</a>, <a href="https://python-docs.synapse.org/build/html/index.html">Python</a>,
 or <a href="https://python-docs.synapse.org/build/html/CommandLineClient.html">CLI</a>
-clients.<br />
-See <a href="https://docs.synapse.org/articles/provenance.html">here</a>
-for how provenance works on Synapse.</p>
-<p>For example, using the R package <code>synapser</code>:<br />
-The function <code>synGet()</code> downloads the data into a cache
-folder in your home directory (<code>~/.synapseCache</code>) in
-whichever file system you’re on. Every time you run the code, it checks
-your cached copy against the original on Synapse and re-downloads it
-only if there has been changes since the last download. The cache
-location is specified in <code>~/.synapseConfig</code>.</p>
+clients. See <a href="https://docs.synapse.org/articles/provenance.html">here</a> for
+how provenance works on Synapse.</p>
+<p>For example, using the R package <code>synapser</code>: The function
+<code>synGet()</code> downloads the data into a cache folder in your
+home directory (<code>~/.synapseCache</code>) in whichever file system
+you’re on. Every time you run the code, it checks your cached copy
+against the original on Synapse and re-downloads it only if there have
+been changes since the last download. The cache location is specified in
+<code>~/.synapseConfig</code>.</p>
 </div>
 
 

@@ -18,28 +18,28 @@ Use this command to download git 👉 `brew install git`
 ### For Linux (Ubuntu)
 Use this command to download git 👉 `sudo apt-get install git`
 
-## Create an account on GitHub and create a new repo 
+## Create an account on GitHub and create a new repo
 
 https://github.com/
 
-- create a new repo by clicking on new repo 
+- Create a new repo by clicking "New repository"
 
 ![Screenshot 2023-10-18 at 5 46 29 AM](https://github.com/amnahsiddiqa/Docker_Singularity_HPC_Stuffs/assets/28387956/bacf34a6-81be-4285-8dff-327bb431d509)
 
 ## Clone Repo
 
 ```
-mkdir projectname 
+mkdir projectname
 
 git clone <repo-url>
 ```
-## Configure Git 
+## Configure Git
 
 ```
 git config --global user.name "amnahsiddiqa"
 git config --global user.email "amnahsiddiqa@gmail.com"
 
-# check your config worked or not 
+# confirm your config
 git config -l
 ```
 
@@ -66,31 +66,28 @@ git push
 ```
 
 See more beginner's tips [here](https://render.com/blog/git-organized-a-better-git-flow)
- 
+
 ## How do I go back from my current state to a snapshot made on a certain commit?
-there are two types of commands and you should be careful in making selection to any one of them based on their purpose. 
-`git revert and git reset` 
+There are two types of commands, and you should choose carefully between them based on their purpose: `git reset` and `git revert`.
 
-- I will explain reset as a rewind call. so you make a call to back to a place in your whole branch timeline to a certain commit and everything (all the changes you made after that)will be gone from that point onwards.
+- `git reset` is a rewind call: it moves your branch's history back to a specific commit, and everything after that point is gone from the branch's timeline.
 
-- Git revert on the other hand  undoes changes made in a given commit, creating a commit which is reverse (well, reciprocal) of a given commit. 
+- `git revert`, on the other hand, undoes the changes made in a given commit by creating a new commit that is the reverse (reciprocal) of it — nothing is removed from history.
 
 ```
 (base) ➜  test_demo2 git:(main) ✗ git reset 3bbe6d4 --hard
 #HEAD is now at `sha key of commit` Initial commit
 (base) ➜  test_demo2 git:(main) ✗ git reset --soft "HEAD@{1}"
-(base) ➜  test_demo2 git:(main) ✗ git commit -m "Revert to 3bbe6d4 "
+(base) ➜  test_demo2 git:(main) ✗ git commit -m "Revert to 3bbe6d4"
 
 ```
 
+## Issues and commits for better collaboration
 
+- Reference an issue's number in a commit message (e.g. `Fixes #12`) to automatically close it when the commit is merged.
+- Use issues to ask for help or to track work that needs doing.
 
-## Add issues and  commits for better collaboration  
-
-- use the number of issue to close or fix the issue or get help
-- use issues to get help from somebody else 
-
-## Terminologies 
+## Terminology
 
 **A commit SHA (Secure Hash Algorithm) key:**
 

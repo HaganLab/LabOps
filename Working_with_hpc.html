@@ -1710,7 +1710,7 @@ and should be done in your first week.</p>
 lab member if you need this) covering how to get some flexibility in
 interactive sessions for development and testing.</p></li>
 <li><p>Bioinformatics and R Users Group (BUG and RUG). You can reach
-<code>bug-announce@mailman.cchmc.org</code> to get invitation for the
+<code>bug-announce@mailman.cchmc.org</code> to get an invitation for the
 mailing list.</p></li>
 <li><p><a href="https://hpc-carpentry.github.io/hpc-intro/">Introduction
 to HPC from the HPC Carpentry</a></p></li>
@@ -1720,11 +1720,11 @@ Center SC workshop</a></p></li>
 </div>
 </div>
 </div>
-<div id="get-vpn-setup" class="section level2">
-<h2>Get VPN setup</h2>
+<div id="setting-up-vpn" class="section level2">
+<h2>Setting up VPN</h2>
 <ul>
-<li>Call IT @ 64100 depart to get yourself <code>anyconnect</code>
-downloaded and setup.</li>
+<li>Call IT at ext. 64100 to get <code>anyconnect</code> downloaded and
+set up.</li>
 </ul>
 </div>
 <div id="getting-acquainted-with-your-hpc-environment" class="section level2">
@@ -1734,7 +1734,7 @@ using:</p>
 <pre class="bash"><code>$ ssh username@bmiclusterp.chmcres.cchmc.org
 #example
 $ ssh sid1df@bmiclusterp.chmcres.cchmc.org</code></pre>
-<p>Otherwise</p>
+<p>Otherwise:</p>
 <pre class="bash"><code>$ ssh username@research.cchmc.org
 #example
 $ ssh sid1df@research.cchmc.org
@@ -1743,11 +1743,11 @@ $ ssh sid1df@research.cchmc.org
 scratch is @ <code>./scratch/yourusername</code></p>
 <pre class="bash"><code># From your home it should be located as follows
 [sid1df@bmiclusterp2 ~]$ cd ~
-[sid1df@bmiclusterp2 ~]$ ls 
+[sid1df@bmiclusterp2 ~]$ ls
 Desktop
 [sid1df@bmiclusterp2 ~]$ cd ../../../data/HaganLab
 [sid1df@bmiclusterp2 HaganLab]$ cd ../../../scratch/sid1df
-[sid1df@bmiclusterp2 sid1df]$ </code></pre>
+[sid1df@bmiclusterp2 sid1df]$</code></pre>
 <p>Check available modules and load them as per your requirement
 using:</p>
 <pre class="bash"><code>#Checking available modules
@@ -1762,13 +1762,13 @@ using:</p>
 job submission. Use scratch space for computing and submit batch jobs as
 follows:</p>
 <pre class="bash"><code>#submit
-$ bsub &lt;runscript.sh (make sure to include &lt; followed immediately by filename)
-#check the status of current jobs 
+$ bsub &lt; runscript.sh
+#check the status of current jobs
 $ bjobs
-# kill specific job 
-$ bkill jobid 
-# kill all jobs 
-$ bkill 0 
+# kill specific job
+$ bkill jobid
+# kill all jobs
+$ bkill 0
 </code></pre>
 </div>
 <div id="reference-genomefile-locations-not-all-there-may-need-to-download" class="section level3">
@@ -1787,13 +1787,13 @@ directory, without slash it transfers directory itself and contents:
 <pre class="bash"><code>
 # Usage: Run these command from your local terminal.
 # Example: Copying files from the cluster to your local machine
-$ rsync -rvtP  sid1df@bmiclusterp.chmcres.cchmc.org:/data/HaganLab/irene_dc/samplesheet.csv /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/
+$ rsync -rvtP sid1df@bmiclusterp.chmcres.cchmc.org:/data/HaganLab/irene_dc/samplesheet.csv /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/
 
 # Command for copying a file from your local machine to the remote server:
-$ rsync -rvtP  /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/nfcore_RNAseq_prj0002.sh sid1df@bmiclusterp.chmcres.cchmc.org:/scratch/sid1df
+$ rsync -rvtP /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/nfcore_RNAseq_prj0002.sh sid1df@bmiclusterp.chmcres.cchmc.org:/scratch/sid1df
 </code></pre>
 <ul>
-<li>Filezilla Instructions: use
+<li>FileZilla instructions: use
 <code>bmiclusterp2.chmcres.cchmc.org</code> as target and
 <code>22</code> as port together with your CCHMC credentials (your
 username, password)</li>
@@ -1802,7 +1802,7 @@ username, password)</li>
 <div id="working-interactively-on-the-cluster" class="section level3">
 <h3>Working interactively on the cluster</h3>
 <ul>
-<li>in progress</li>
+<li>In progress</li>
 </ul>
 </div>
 <div id="from-your-local-terminalrstudio" class="section level3">

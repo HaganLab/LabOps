@@ -17,16 +17,16 @@ New lab members should request an HPC cluster account by emailing `help-cluster@
 
 - CCHMC HPC talk (slides on SharePoint — link TBD; ask Thomas or a lab member if you need this) covering how to get some flexibility in interactive sessions for development and testing.
 
-- Bioinformatics and R Users Group (BUG and RUG). You can reach `bug-announce@mailman.cchmc.org` to get invitation for the mailing list. 
+- Bioinformatics and R Users Group (BUG and RUG). You can reach `bug-announce@mailman.cchmc.org` to get an invitation for the mailing list.
 
 - [Introduction to HPC from the HPC Carpentry](https://hpc-carpentry.github.io/hpc-intro/)  
 
 - [Pawsey Center SC workshop](https://pawseysc.github.io/sc19-containers/)
 
 
-## Get VPN setup 
+## Setting up VPN
 
-- Call IT @ 64100 depart to get yourself `anyconnect` downloaded and setup.
+- Call IT at ext. 64100 to get `anyconnect` downloaded and set up.
 
 ## Getting acquainted with your HPC environment
 
@@ -39,7 +39,7 @@ $ ssh username@bmiclusterp.chmcres.cchmc.org
 $ ssh sid1df@bmiclusterp.chmcres.cchmc.org
 ```
 
-Otherwise 
+Otherwise:
 
 ``` bash
 $ ssh username@research.cchmc.org
@@ -54,11 +54,11 @@ Lab work space from root is @ `./data/HaganLab` and scratch is @ `./scratch/your
 ``` bash
 # From your home it should be located as follows
 [sid1df@bmiclusterp2 ~]$ cd ~
-[sid1df@bmiclusterp2 ~]$ ls 
+[sid1df@bmiclusterp2 ~]$ ls
 Desktop
 [sid1df@bmiclusterp2 ~]$ cd ../../../data/HaganLab
 [sid1df@bmiclusterp2 HaganLab]$ cd ../../../scratch/sid1df
-[sid1df@bmiclusterp2 sid1df]$ 
+[sid1df@bmiclusterp2 sid1df]$
 ```
 
 Check available modules and load them as per your requirement using:
@@ -73,21 +73,20 @@ Check available modules and load them as per your requirement using:
 
 ```
 
-### Handling  batch jobs on HPC
+### Handling batch jobs on HPC
 
-Two ways to work with the HPC: through interactive sessions and batch job submission. Use scratch space for computing and submit batch jobs as follows: 
-
+Two ways to work with the HPC: through interactive sessions and batch job submission. Use scratch space for computing and submit batch jobs as follows:
 
 
 ``` bash
 #submit
-$ bsub <runscript.sh (make sure to include < followed immediately by filename)
-#check the status of current jobs 
+$ bsub < runscript.sh
+#check the status of current jobs
 $ bjobs
-# kill specific job 
-$ bkill jobid 
-# kill all jobs 
-$ bkill 0 
+# kill specific job
+$ bkill jobid
+# kill all jobs
+$ bkill 0
 
 ```
 
@@ -95,7 +94,7 @@ $ bkill 0
 
 Supporting databases and some related files that we use are under `/HaganLab/databases/`
 
-### Transferring files to and from  HPC 
+### Transferring files to and from HPC
 
 - Trailing slash on sending side transfers only contents of the directory, without slash it transfers directory itself and contents: `rsync -rvtP local/files/location/ yourusername@bmiclusterp.chmcres.cchmc.org:/scratch/yourusername/HPC/location`
 
@@ -104,19 +103,19 @@ Supporting databases and some related files that we use are under `/HaganLab/dat
 
 # Usage: Run these command from your local terminal.
 # Example: Copying files from the cluster to your local machine
-$ rsync -rvtP  sid1df@bmiclusterp.chmcres.cchmc.org:/data/HaganLab/irene_dc/samplesheet.csv /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/
+$ rsync -rvtP sid1df@bmiclusterp.chmcres.cchmc.org:/data/HaganLab/irene_dc/samplesheet.csv /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/
 
 # Command for copying a file from your local machine to the remote server:
-$ rsync -rvtP  /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/nfcore_RNAseq_prj0002.sh sid1df@bmiclusterp.chmcres.cchmc.org:/scratch/sid1df
+$ rsync -rvtP /Users/amnahsiddiqa/Documents/CCHMC_Projects/Kiana_Pasare/nfcore_RNAseq_prj0002.sh sid1df@bmiclusterp.chmcres.cchmc.org:/scratch/sid1df
 
 ```
 
-- Filezilla Instructions: use ` bmiclusterp2.chmcres.cchmc.org` as target and `22` as port together with your CCHMC credentials (your username, password)
+- FileZilla instructions: use `bmiclusterp2.chmcres.cchmc.org` as target and `22` as port together with your CCHMC credentials (your username, password)
 
 
 ### Working interactively on the cluster
 
-- in progress
+- In progress
 
 ### From your local terminal/RStudio
 
