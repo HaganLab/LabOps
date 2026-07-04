@@ -63,7 +63,7 @@ function renderBlogList(entries) {
     byMonth[monthKey].forEach(function (entry) {
       var href = 'Blog/' + encodeURIComponent(entry.folder) + '/' + encodeURIComponent(entry.file);
       var formatBadge = entry.format ? ' <em>(' + entry.format + ')</em>' : '';
-      html += '<li><a href="' + href + '">' + entry.title + '</a>' + formatBadge +
+      html += '<li><a href="' + href + '" download="' + entry.file + '">' + entry.title + '</a>' + formatBadge +
               ' — ' + entry.contributor + ', ' + entry.date +
               '<br>' + entry.description + '</li>';
     });
