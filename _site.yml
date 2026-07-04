@@ -1,7 +1,7 @@
-name: "ResourcesGuide"
+name: "LabOps"
 
 navbar:
-  title: "Computational Resources - Hagan Lab"
+  title: "<img src='images/haganlab-logo.png' alt='Hagan Lab'>"
   left:
   - text: "Working with HPC"
     href: Working_with_hpc.html
@@ -25,3 +25,4 @@ output:
     theme: cerulean
     highlight: textmate
     keep_md: true
+    css: custom.css

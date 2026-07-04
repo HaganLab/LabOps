@@ -15,7 +15,7 @@ New lab members should request an HPC cluster account by emailing `help-cluster@
 
 #### Some useful references:
 
-- CCHMC HPC talk (slides on SharePoint — link TBD; ask the PI or a lab member if you need this) covering how to get some flexibility in interactive sessions for development and testing.
+- CCHMC HPC talk (slides on SharePoint — link TBD; ask Thomas or a lab member if you need this) covering how to get some flexibility in interactive sessions for development and testing.
 
 - Bioinformatics and R Users Group (BUG and RUG). You can reach `bug-announce@mailman.cchmc.org` to get invitation for the mailing list. 
 

@@ -1,0 +1,100 @@
+/* Hagan Lab brand colors, matching haganlab.org */
+:root {
+  --hagan-navy: #0a2060;
+  --hagan-purple: #764099;
+}
+
+body {
+  color: var(--hagan-navy);
+}
+
+a {
+  color: var(--hagan-navy);
+}
+
+a:hover,
+a:focus {
+  color: var(--hagan-purple);
+}
+
+h1, h2, h3, h4, h5, h6,
+.title {
+  color: var(--hagan-navy);
+}
+
+/* Navbar: brand color + always-collapsed hamburger, regardless of viewport width */
+
+.navbar-default {
+  background-color: var(--hagan-navy);
+  border-color: var(--hagan-navy);
+}
+
+.navbar-brand {
+  padding: 8px 15px;
+  height: auto;
+}
+
+.navbar-brand img {
+  display: block;
+  height: 36px;
+  width: auto;
+}
+
+.navbar-header {
+  float: none;
+}
+
+.navbar-toggle {
+  display: block !important;
+  border-color: var(--hagan-purple);
+  margin-top: 12px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+  background-color: var(--hagan-purple);
+}
+
+.navbar-collapse {
+  border-top: none;
+  box-shadow: none;
+}
+
+.navbar-collapse.collapse {
+  display: none !important;
+}
+
+.navbar-collapse.in {
+  display: block !important;
+  overflow-y: auto;
+}
+
+.navbar-nav {
+  float: none !important;
+  margin: 0;
+}
+
+.navbar-nav > li {
+  float: none;
+}
+
+.navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: var(--hagan-purple);
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: var(--hagan-purple);
+}

@@ -10,11 +10,11 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 
 Per the [Hagan Lab Manual](https://github.com/HaganLab), use of AI tools (large language models and coding assistants) is permitted as a productivity aid, with important conditions:
 
-* **Use approved, license-covered tools.** The lab has a Claude Team license, and each lab member receives a seat — use this rather than ad hoc personal accounts for lab work. If you're a rotating student or short-term member, check with the PI about tool access before using AI tools for lab work.
+* **Use approved, license-covered tools.** The lab has a Claude Team license, and each lab member receives a seat — use this rather than ad hoc personal accounts for lab work. If you're a rotating student or short-term member, check with Thomas about tool access before using AI tools for lab work.
 * **You remain fully responsible for the accuracy, validity, and integrity of anything you produce with AI assistance.** Verify outputs. Never present unverified AI output as established fact.
 * **Disclose AI use where required** by journals, funders, or course policies.
 * **Never paste confidential, unpublished, PHI, or other sensitive data into any external AI tool** that isn't covered by an appropriate institutional agreement (see [Acquiring and Sharing Data](Acquiring_and_sharing_data.html) for what counts as an approved location for sensitive data).
-* When in doubt about whether a particular use is appropriate, ask the PI.
+* When in doubt about whether a particular use is appropriate, ask Thomas.
 
 The same standard applies to writing: if an AI tool helps draft text, you're responsible for verifying and properly attributing anything it produces, and AI-generated text must never introduce unattributed or fabricated material or citations (see [Organizing Projects](Organizing_projects.html) for citation practices).
 

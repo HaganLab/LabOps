@@ -8,10 +8,10 @@ title: "Publishing"
 
 Per the [Hagan Lab Manual](https://github.com/HaganLab), we are committed to open, reproducible science and to meeting the data-sharing requirements of journals and funders, including the **NIH Data Management and Sharing (DMS) Policy**. A few things to plan for from the start of a project, not just at submission time:
 
-* **Discuss the data-sharing plan with the PI early.** Don't wait until a manuscript is in review to figure out where data and code will live.
+* **Discuss the data-sharing plan with Thomas early.** Don't wait until a manuscript is in review to figure out where data and code will live.
 * **Deposit data in an established, discipline-appropriate public repository** where possible (e.g., [GEO](https://www.ncbi.nlm.nih.gov/geo/), [SRA](https://www.ncbi.nlm.nih.gov/sra), [ImmPort](https://www.immport.org/), or others listed below) rather than only as a journal supplement.
 * **Make analysis code available**, typically via the lab's GitHub, at the time of publication.
-* If your project involves **human-subjects data**, any shared data must be appropriately de-identified and shared only in accordance with our IRB protocol and participant consent — check with the PI before sharing anything derived from PHI.
+* If your project involves **human-subjects data**, any shared data must be appropriately de-identified and shared only in accordance with our IRB protocol and participant consent — check with Thomas before sharing anything derived from PHI.
 * Keep data and metadata organized and documented (see [Acquiring and Sharing Data](Acquiring_and_sharing_data.html)) throughout the project so that deposition at the end is straightforward rather than a scramble.
 
 ## Findable and Accessible: Where to publish?
