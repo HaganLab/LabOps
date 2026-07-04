@@ -11,7 +11,7 @@
 
 <meta name="author" content="Amnah Siddiqa" />
 
-<meta name="date" content="2023-10-19" />
+<meta name="date" content="2026-07-03" />
 
 <title>Containerizing</title>
 
@@ -1577,6 +1577,9 @@ border-radius: 0px;
 <li>
   <a href="Publishing.html">Publishing</a>
 </li>
+<li>
+  <a href="Using_AI_Tools.html">Using AI Tools</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -1591,13 +1594,65 @@ border-radius: 0px;
 
 <h1 class="title toc-ignore">Containerizing</h1>
 <h4 class="author">Amnah Siddiqa</h4>
-<h4 class="date">2023-10-19</h4>
+<h4 class="date">2026-07-03</h4>
 
 </div>
 
 
+<div id="why-containers" class="section level2">
+<h2>Why Containers?</h2>
+<p>Containers package up code together with all of its dependencies
+(specific versions of tools, libraries, and OS-level packages) so that
+an analysis runs the same way regardless of which machine — your laptop,
+a labmate’s laptop, or the HPC cluster — it runs on. This is central to
+reproducibility: a pipeline that only works because of something you
+happened to install on your own machine two years ago isn’t something
+anyone else (including future you) can rerun.</p>
+</div>
+<div id="docker-vs.-singularityapptainer" class="section level2">
+<h2>Docker vs. Singularity/Apptainer</h2>
+<ul>
+<li><strong>Docker</strong> is the most common tool for
+<em>building</em> and running containers locally, and most published
+container images are distributed as Docker images. However, Docker
+requires a background daemon running with elevated privileges, which
+shared, multi-user HPC systems generally don’t allow for security
+reasons.</li>
+<li><strong>Singularity</strong> (now also distributed as
+<strong>Apptainer</strong>) is the container runtime used on the CCHMC
+HPC cluster instead. It can pull and run existing Docker images without
+needing root access, which is why you’ll see it referenced in the <a href="Working_with_hpc.html">Working with the HPC</a> page
+(<code>module load singularity/3.7.0</code>).</li>
+</ul>
+<p>In practice, for most lab work you won’t need to build your own
+containers — you’ll pull existing, well-maintained images (e.g., from <a href="https://nf-co.re/">nf-core</a> pipelines, which auto-pull the
+containers they need, or from <a href="https://bioconda.github.io/">Bioconda</a>/<a href="https://biocontainers.pro/">Biocontainers</a>) rather than writing
+your own <code>Dockerfile</code>.</p>
+</div>
+<div id="using-a-container-on-the-hpc" class="section level2">
+<h2>Using a Container on the HPC</h2>
+<pre class="bash"><code># Load the module
+module load singularity/3.7.0
+
+# Pull a container image (example)
+singularity pull docker://some-org/some-tool:latest
+
+# Run a command inside the container
+singularity exec some-tool_latest.sif some-command --args</code></pre>
+<p>nf-core pipelines (see <a href="Publishing.html">Publishing</a> for
+how we run nf-core/rnaseq) handle this pulling and execution
+automatically when you point Nextflow at the <code>singularity</code>
+profile — you generally don’t need to do this manually unless you’re
+troubleshooting or running a tool outside of an existing pipeline.</p>
 <div id="in-progress" class="section level3">
 <h3>In Progress</h3>
+<ul>
+<li>Building custom images with a <code>Dockerfile</code> for
+lab-specific tools</li>
+<li>Converting a Docker image to a Singularity <code>.sif</code> file
+for the HPC</li>
+</ul>
+</div>
 </div>
 
 

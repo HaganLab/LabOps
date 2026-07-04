@@ -13,7 +13,7 @@
 
 <meta name="date" content="2026-07-03" />
 
-<title>Acquiring and Sharing Data</title>
+<title>Using AI Tools</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1592,107 +1592,73 @@ border-radius: 0px;
 
 
 
-<h1 class="title toc-ignore">Acquiring and Sharing Data</h1>
+<h1 class="title toc-ignore">Using AI Tools</h1>
 <h4 class="author">Amnah Siddiqa</h4>
 <h4 class="date">2026-07-03</h4>
 
 </div>
 
 
-<div id="lab-policy-where-data-lives" class="section level2">
-<h2>Lab Policy: Where Data Lives</h2>
+<div id="lab-policy" class="section level2">
+<h2>Lab Policy</h2>
 <p>Per the <a href="https://github.com/HaganLab">Hagan Lab Manual</a>,
-these rules apply to all lab data, regardless of project:</p>
+use of AI tools (large language models and coding assistants) is
+permitted as a productivity aid, with important conditions:</p>
 <ul>
-<li><strong>Approved storage</strong>: CCHMC <strong>OneDrive</strong>
-for documents and working files, and the <strong>BMI HPC
-cluster</strong> for large datasets and analyses (see <a href="Working_with_hpc.html">Working with the HPC</a>). Analysis code
-belongs in the lab’s <strong>GitHub</strong> repositories under version
-control.</li>
-<li><strong>Never store the only copy of anything locally.</strong> Data
-must never exist only on a personal device, a personal cloud account, or
-a single local drive — institutional storage is backed up automatically,
-and you’re responsible for making sure your work actually lands
-there.</li>
-<li><strong>PHI / sensitive human-subjects data</strong> must be stored
-<em>only</em> in CCHMC-approved secure locations in accordance with
-HIPAA and our IRB protocol. It must never be placed on personal
-accounts, unsecured drives, or <strong>external AI tools</strong> (see
-<a href="Using_AI_Tools.html">Using AI Tools</a> for what “external”
-means here).</li>
-<li><strong>Naming and organization</strong>: use clear, consistent,
-descriptive file names and folder structure — e.g., dates in
-<code>YYYY-MM-DD</code> format, project identifiers, and version
-information.</li>
-<li><strong>Raw vs. processed</strong>: keep raw data separate from
-processed data and never overwrite the raw data. Document the provenance
-of derived files (code + inputs) so any result can be traced back to the
-raw data that produced it.</li>
-<li>Use <strong>Git</strong> for version control of code — see <a href="git_and_github.html">Git and GitHub</a>.</li>
+<li><strong>Use approved, license-covered tools.</strong> The lab has a
+Claude Team license, and each lab member receives a seat — use this
+rather than ad hoc personal accounts for lab work. If you’re a rotating
+student or short-term member, check with the PI about tool access before
+using AI tools for lab work.</li>
+<li><strong>You remain fully responsible for the accuracy, validity, and
+integrity of anything you produce with AI assistance.</strong> Verify
+outputs. Never present unverified AI output as established fact.</li>
+<li><strong>Disclose AI use where required</strong> by journals,
+funders, or course policies.</li>
+<li><strong>Never paste confidential, unpublished, PHI, or other
+sensitive data into any external AI tool</strong> that isn’t covered by
+an appropriate institutional agreement (see <a href="Acquiring_and_sharing_data.html">Acquiring and Sharing Data</a>
+for what counts as an approved location for sensitive data).</li>
+<li>When in doubt about whether a particular use is appropriate, ask the
+PI.</li>
 </ul>
-<p>The rest of this page covers the mechanics of moving and linking
-larger data objects once you know where they’re supposed to live.</p>
+<p>The same standard applies to writing: if an AI tool helps draft text,
+you’re responsible for verifying and properly attributing anything it
+produces, and AI-generated text must never introduce unattributed or
+fabricated material or citations (see <a href="Organizing_projects.html">Organizing Projects</a> for citation
+practices).</p>
 </div>
-<div id="goals" class="section level2">
-<h2>Goals</h2>
+<div id="practical-uses-in-computational-work" class="section level2">
+<h2>Practical Uses in Computational Work</h2>
+<p>Some places AI coding assistants tend to be genuinely useful for the
+kind of work in this guide:</p>
 <ul>
-<li>Keep shared data (including processed data and results) in a stable
-shared location</li>
-<li>Link to data instead of copying/moving data</li>
-<li>Incorporate data linking in your script<br />
-</li>
-<li>Treat processed data and results as “raw” data objects for sharing
-purposes</li>
-<li>Describe data: origin, what’s been done with it, what the
-columns/rows mean, etc.</li>
-<li>keep data files together with their metadata and any processing
-scripts when applicable, either physically or with a reliable link
-between them.</li>
+<li>Explaining an unfamiliar error message or stack trace before you go
+digging through Stack Overflow</li>
+<li>Drafting boilerplate (e.g., a first pass at a Nextflow config, an
+Rmd skeleton, a <code>Dockerfile</code>) that you then review and
+adapt</li>
+<li>Summarizing or refactoring existing analysis code you’ve already
+reviewed for correctness</li>
+<li>Explaining what a command-line tool’s flags do before you run it on
+real data</li>
 </ul>
-<p>A good way to interact with data objects is in a manner similar to
-working with git for developing code: “pushing” and “pulling” data
-objects to and from remote repositories from within your working
-directory, scripting everything, instead of copying data manually into
-the project folder. This not only makes work easier, but also helps
-maintain data provenance and promotes transparency and reproducibility.
-Github repositories, however, are (currently) limited in size and are
-therefore not optimal for sharing large data objects and research
-projects. Instead we can use services such as Synapse and RStudio
-Connect and tools such as <a href="https://docs.globus.org">Globus
-CLI</a> and the R <a href="http://pins.rstudio.com"><code>pins</code>
-package</a>. In addition to providing a way to incorporate data transfer
-in the script, these tools also manage the caching and check for updates
-beforing re-downloading data. The caching ensures that we still have the
-latest version available in our system in the case that the original
-becomes unavailable for whatever reason.</p>
-<p>Sharing data between “native” projects on the same file system can be
-done using the R package <code>pins</code> (see below). Sharing data
-among file systems can be done either directly with Globus or via
-servers such as Synapse and RStudio Connect. Interacting with servers
-such as Synapse and RStudio Connect can be done using either their own
-clients (see below) or with <code>pins</code>.</p>
-<p>To read more about data provenance and management:<br />
-<a href="https://old.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf" class="uri">https://old.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf</a><br />
-<a href="https://www.w3.org/2005/Incubator/prov/wiki/What_Is_Provenance" class="uri">https://www.w3.org/2005/Incubator/prov/wiki/What_Is_Provenance</a><br />
-<a href="https://docs.synapse.org/articles/provenance.html" class="uri">https://docs.synapse.org/articles/provenance.html</a></p>
-<p>An example for a resource sharing plan to include in NIH grants: <a href="https://github.com/lab-carpentry/blueprint-resourcesharing/blob/master/examples/NIH-example.md" class="uri">https://github.com/lab-carpentry/blueprint-resourcesharing/blob/master/examples/NIH-example.md</a></p>
+<p>None of these remove the need to actually understand what the code
+does before running it against lab data — especially anything that
+touches real samples, PHI, or production HPC storage.</p>
 </div>
-<div id="from-synapse" class="section level2">
-<h2>From Synapse</h2>
-<p><a href="https://docs.synapse.org/articles/" class="uri">https://docs.synapse.org/articles/</a><br />
-Often the best way to work with data that live on Synapse is to
-download/upload them directly from Synapse using its <a href="https://r-docs.synapse.org/articles/synapser.html">R</a>, <a href="https://python-docs.synapse.org/build/html/index.html">pyhton</a>,
-or <a href="https://python-docs.synapse.org/build/html/CommandLineClient.html">CLI</a>
-clients.<br />
-See <a href="https://docs.synapse.org/articles/provenance.html">here</a>
-for how provenance works on Synapse.</p>
-<p>For example, using the R package <code>synapser</code>:<br />
-The function <code>synGet()</code> downloads the data into a cache
-folder in your home directory (<code>~/.synapseCache</code>) in
-whichever file system you’re on. Every time you run the code, it checks
-your cached copy against the original on Synapse and re-downloads it
-only if there has been changes since the last download. The cache
-location is specified in <code>~/.synapseConfig</code>.</p>
+<div id="what-not-to-do" class="section level2">
+<h2>What Not to Do</h2>
+<ul>
+<li>Don’t paste sample sheets, patient IDs, sequencing metadata, or any
+other PHI/sensitive data into a general-purpose AI chat tool.</li>
+<li>Don’t run AI-suggested destructive commands (<code>rm -rf</code>,
+force-pushes, dropping database tables, bulk file moves) against shared
+lab storage or the HPC cluster without reading and understanding exactly
+what they do first.</li>
+<li>Don’t treat AI output as a substitute for actually checking your
+statistics, your figures, or your citations.</li>
+</ul>
 </div>
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Working with the hpc clusters"
 author: "Amnah Siddiqa"
-date: "2023-10-19"
+date: "2026-07-03"
 ---
 
 
@@ -9,11 +9,15 @@ date: "2023-10-19"
 
 ## High Performance Computing Cluster (HPCC)
 
-CCHMC [HPCC](https://bmi.cchmc.org/resources/clusters/computational-cluster) employs LSF resource manager and scheduler. 
+CCHMC [HPCC](https://bmi.cchmc.org/resources/clusters/computational-cluster) employs LSF resource manager and scheduler.
+
+### Requesting an Account
+
+New lab members should request an HPC cluster account by emailing `help-cluster@bmi.cchmc.org`. This is one of the onboarding tasks in the [Hagan Lab Manual](https://github.com/HaganLab) and should be done in your first week.
 
 #### Some useful references:
 
-- [CCHMC HPCC talk @ sharepoint ](to allow some flexibility in interactive sessions for development and testing.)
+- CCHMC HPCC talk (slides on SharePoint — link TBD; ask the PI or a lab member if you need this) covering how to get some flexibility in interactive sessions for development and testing.
 
 - Bioinformatics and R Users Group (BUG and RUG). You can reach `bug-announce@mailman.cchmc.org` to get invitation for the mailing list. 
 
@@ -31,7 +35,7 @@ CCHMC [HPCC](https://bmi.cchmc.org/resources/clusters/computational-cluster) emp
 If you are connected to VPN, log into HPCC from your terminal using:
 
 
-```bash
+``` bash
 $ ssh username@bmiclusterp.chmcres.cchmc.org
 #example
 $ ssh sid1df@bmiclusterp.chmcres.cchmc.org
@@ -39,7 +43,7 @@ $ ssh sid1df@bmiclusterp.chmcres.cchmc.org
 
 Otherwise 
 
-```bash
+``` bash
 $ ssh username@research.cchmc.org
 #example
 $ ssh sid1df@research.cchmc.org
@@ -49,7 +53,7 @@ $ ssh sid1df@research.cchmc.org
 Lab work space from root is @ `./data/HaganLab` and scratch is @ `./scratch/yourusername`
 
 
-```bash
+``` bash
 # From your home it should be located as follows
 [sid1df@bmiclusterp2 ~]$ cd ~
 [sid1df@bmiclusterp2 ~]$ ls 
@@ -62,7 +66,7 @@ Desktop
 Check available modules and load them as per your requirement using:
 
 
-```bash
+``` bash
 #Checking available modules
 [sid1df@bmiclusterp2 /]$ module avail
 #Loading appropriate modules
@@ -77,7 +81,7 @@ Two ways to work with the HPCC: through interactive sessions and batch job submi
 
 
 
-```bash
+``` bash
 #submit
 $ bsub <runscript.sh (make sure to include < followed immediately by filename)
 #check the status of current jobs 
@@ -98,7 +102,7 @@ Supporting databases and some related files that we use are under `/HaganLab/dat
 - Trailing slash on sending side transfers only contents of the directory, without slash it transfers directory itself and contents: `rsync -rvtP local/files/location/ yourusername@bmiclusterp.chmcres.cchmc.org:/scratch/yourusername/HPC/location`
 
 
-```bash
+``` bash
 
 # Usage: Run these command from your local terminal.
 # Example: Copying files from the cluster to your local machine

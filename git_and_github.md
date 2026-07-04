@@ -1,12 +1,16 @@
 ---
 title: "Git and Github"
 author: "Amnah Siddiqa"
-date: "2023-10-19"
+date: "2026-07-03"
 ---
 
 
 
-## Set up Git and Github 
+## Lab Policy: Why We Use Git
+
+Per the [Hagan Lab Manual](https://github.com/HaganLab), analysis code should be version-controlled and uploaded to the lab's GitHub repositories — this is part of maintaining reproducible, well-documented records that anyone in the lab (including your future self) can pick up. Documented analysis pipelines and coding conventions are maintained under [github.com/HaganLab](https://github.com/HaganLab) and the HaganLab HPC folder; if you're using an AI coding assistant to help write analysis code, the same expectations apply — see [Using AI Tools](Using_AI_Tools.html).
+
+## Set up Git and Github
 ### For Mac
 Use this command to download git 👉 `brew install git`
 `Git --version`

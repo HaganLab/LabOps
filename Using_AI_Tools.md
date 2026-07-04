@@ -1,0 +1,36 @@
+---
+title: "Using AI Tools"
+author: "Amnah Siddiqa"
+date: "2026-07-03"
+---
+
+
+
+## Lab Policy
+
+Per the [Hagan Lab Manual](https://github.com/HaganLab), use of AI tools (large language models and coding assistants) is permitted as a productivity aid, with important conditions:
+
+* **Use approved, license-covered tools.** The lab has a Claude Team license, and each lab member receives a seat — use this rather than ad hoc personal accounts for lab work. If you're a rotating student or short-term member, check with the PI about tool access before using AI tools for lab work.
+* **You remain fully responsible for the accuracy, validity, and integrity of anything you produce with AI assistance.** Verify outputs. Never present unverified AI output as established fact.
+* **Disclose AI use where required** by journals, funders, or course policies.
+* **Never paste confidential, unpublished, PHI, or other sensitive data into any external AI tool** that isn't covered by an appropriate institutional agreement (see [Acquiring and Sharing Data](Acquiring_and_sharing_data.html) for what counts as an approved location for sensitive data).
+* When in doubt about whether a particular use is appropriate, ask the PI.
+
+The same standard applies to writing: if an AI tool helps draft text, you're responsible for verifying and properly attributing anything it produces, and AI-generated text must never introduce unattributed or fabricated material or citations (see [Organizing Projects](Organizing_projects.html) for citation practices).
+
+## Practical Uses in Computational Work
+
+Some places AI coding assistants tend to be genuinely useful for the kind of work in this guide:
+
+* Explaining an unfamiliar error message or stack trace before you go digging through Stack Overflow
+* Drafting boilerplate (e.g., a first pass at a Nextflow config, an Rmd skeleton, a `Dockerfile`) that you then review and adapt
+* Summarizing or refactoring existing analysis code you've already reviewed for correctness
+* Explaining what a command-line tool's flags do before you run it on real data
+
+None of these remove the need to actually understand what the code does before running it against lab data — especially anything that touches real samples, PHI, or production HPC storage.
+
+## What Not to Do
+
+* Don't paste sample sheets, patient IDs, sequencing metadata, or any other PHI/sensitive data into a general-purpose AI chat tool.
+* Don't run AI-suggested destructive commands (`rm -rf`, force-pushes, dropping database tables, bulk file moves) against shared lab storage or the HPC cluster without reading and understanding exactly what they do first.
+* Don't treat AI output as a substitute for actually checking your statistics, your figures, or your citations.

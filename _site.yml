@@ -15,7 +15,9 @@ navbar:
     href: Containerizing.html
   - text: "Publishing"
     href: Publishing.html
-  
+  - text: "Using AI Tools"
+    href: Using_AI_Tools.html
+
 output:
   html_document:
     toc: yes

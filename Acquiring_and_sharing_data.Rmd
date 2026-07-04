@@ -9,6 +9,19 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 ```
 
+## Lab Policy: Where Data Lives
+
+Per the [Hagan Lab Manual](https://github.com/HaganLab), these rules apply to all lab data, regardless of project:
+
+* **Approved storage**: CCHMC **OneDrive** for documents and working files, and the **BMI HPC cluster** for large datasets and analyses (see [Working with the HPC](Working_with_hpc.html)). Analysis code belongs in the lab's **GitHub** repositories under version control.
+* **Never store the only copy of anything locally.** Data must never exist only on a personal device, a personal cloud account, or a single local drive — institutional storage is backed up automatically, and you're responsible for making sure your work actually lands there.
+* **PHI / sensitive human-subjects data** must be stored *only* in CCHMC-approved secure locations in accordance with HIPAA and our IRB protocol. It must never be placed on personal accounts, unsecured drives, or **external AI tools** (see [Using AI Tools](Using_AI_Tools.html) for what "external" means here).
+* **Naming and organization**: use clear, consistent, descriptive file names and folder structure — e.g., dates in `YYYY-MM-DD` format, project identifiers, and version information.
+* **Raw vs. processed**: keep raw data separate from processed data and never overwrite the raw data. Document the provenance of derived files (code + inputs) so any result can be traced back to the raw data that produced it.
+* Use **Git** for version control of code — see [Git and GitHub](git_and_github.html).
+
+The rest of this page covers the mechanics of moving and linking larger data objects once you know where they're supposed to live.
+
 ## Goals
 
 * Keep shared data (including processed data and results) in a stable shared location

@@ -11,11 +11,15 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 
 ## High Performance Computing Cluster (HPCC)
 
-CCHMC [HPCC](https://bmi.cchmc.org/resources/clusters/computational-cluster) employs LSF resource manager and scheduler. 
+CCHMC [HPCC](https://bmi.cchmc.org/resources/clusters/computational-cluster) employs LSF resource manager and scheduler.
+
+### Requesting an Account
+
+New lab members should request an HPC cluster account by emailing `help-cluster@bmi.cchmc.org`. This is one of the onboarding tasks in the [Hagan Lab Manual](https://github.com/HaganLab) and should be done in your first week.
 
 #### Some useful references:
 
-- [CCHMC HPCC talk @ sharepoint ](to allow some flexibility in interactive sessions for development and testing.)
+- CCHMC HPCC talk (slides on SharePoint — link TBD; ask the PI or a lab member if you need this) covering how to get some flexibility in interactive sessions for development and testing.
 
 - Bioinformatics and R Users Group (BUG and RUG). You can reach `bug-announce@mailman.cchmc.org` to get invitation for the mailing list. 
 

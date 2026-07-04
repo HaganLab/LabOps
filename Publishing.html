@@ -9,9 +9,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Publishing" />
+<meta name="author" content="Amnah Siddiqa" />
 
-<meta name="date" content="2023-10-19" />
+<meta name="date" content="2026-07-03" />
 
 <title>Publishing</title>
 
@@ -1577,6 +1577,9 @@ border-radius: 0px;
 <li>
   <a href="Publishing.html">Publishing</a>
 </li>
+<li>
+  <a href="Using_AI_Tools.html">Using AI Tools</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -1590,12 +1593,38 @@ border-radius: 0px;
 
 
 <h1 class="title toc-ignore">Publishing</h1>
-<h4 class="author">Publishing</h4>
-<h4 class="date">2023-10-19</h4>
+<h4 class="author">Amnah Siddiqa</h4>
+<h4 class="date">2026-07-03</h4>
 
 </div>
 
 
+<div id="lab-policy-sharing-data-and-code-at-publication" class="section level2">
+<h2>Lab Policy: Sharing Data and Code at Publication</h2>
+<p>Per the <a href="https://github.com/HaganLab">Hagan Lab Manual</a>,
+we are committed to open, reproducible science and to meeting the
+data-sharing requirements of journals and funders, including the
+<strong>NIH Data Management and Sharing (DMS) Policy</strong>. A few
+things to plan for from the start of a project, not just at submission
+time:</p>
+<ul>
+<li><strong>Discuss the data-sharing plan with the PI early.</strong>
+Don’t wait until a manuscript is in review to figure out where data and
+code will live.</li>
+<li><strong>Deposit data in an established, discipline-appropriate
+public repository</strong> where possible (e.g., <a href="https://www.ncbi.nlm.nih.gov/geo/">GEO</a>, <a href="https://www.ncbi.nlm.nih.gov/sra">SRA</a>, <a href="https://www.immport.org/">ImmPort</a>, or others listed below)
+rather than only as a journal supplement.</li>
+<li><strong>Make analysis code available</strong>, typically via the
+lab’s GitHub, at the time of publication.</li>
+<li>If your project involves <strong>human-subjects data</strong>, any
+shared data must be appropriately de-identified and shared only in
+accordance with our IRB protocol and participant consent — check with
+the PI before sharing anything derived from PHI.</li>
+<li>Keep data and metadata organized and documented (see <a href="Acquiring_and_sharing_data.html">Acquiring and Sharing Data</a>)
+throughout the project so that deposition at the end is straightforward
+rather than a scramble.</li>
+</ul>
+</div>
 <div id="findable-and-accessible-where-to-publish" class="section level2">
 <h2>Findable and Accessible: Where to publish?</h2>
 <ul>
@@ -1622,11 +1651,22 @@ methods<br />
 <li>MethodX: the nitty-gritty of the methods (computational and
 experimental)<br />
 </li>
-<li>Github: for code mostly<br />
-</li>
+<li>Github: for code mostly</li>
 <li>Zenodo: for development and review as well as publication,
 integrates with github</li>
 </ul></li>
+</ul>
+</div>
+<div id="running-the-nf-core-rna-seq-pipeline" class="section level2">
+<h2>Running the nf-core RNA-seq Pipeline</h2>
+<p>Several lab projects use the <a href="https://nf-co.re/rnaseq">nf-core/rnaseq</a> Nextflow pipeline for
+standardized, containerized, and reproducible RNA-seq analysis (see <a href="Containerizing.html">Containerizing</a> for background on why
+these pipelines run in containers on the HPC cluster).</p>
+<ul>
+<li><a href="https://nf-co.re/rnaseq/1.4.2/docs/usage">nf-core/rnaseq
+usage docs</a></li>
+<li><a href="https://gencore.bio.nyu.edu/streamlined-rna-seq-analysis-using-nextflow/">Streamlined
+RNA-seq analysis using Nextflow (NYU Gencore)</a></li>
 </ul>
 </div>
 
